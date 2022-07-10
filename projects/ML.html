@@ -22,12 +22,29 @@
             </ul>
         </header>
         <div class="secProj" style="margin-top: 10px;">
-            <h2 id="projTitle">Classification Models and Neural Networks from Linear Alegbra</h2>
+            <h2 id="projTitle">Classification Models and Neural Networks</h2>
             <h3 id="projSub">Python | Pandas, SciPy, NumPy</h3>
             <p style="background:transparent" id="aboutText">
-                These two projects were for an undergraduate linear/non-linear optimization class that focuesed on
+                These two projects were for an undergraduate linear/non-linear optimization class that focused on
                 using pure linear algebra and calculus as opposed to built-in python packages to construct
-                classification models and neural networks. <br><br>
+                classification models and neural networks.
+                <br><br>
+                In the classification project, we built least squares based binary and multi-class classifiers to
+                classfiy the MNIST
+                handwritten digit dataset. The main focal point of the project was using Singular Value Decomposition to
+                solve the Normal Equation, which is used in finding the solution to the least squares problem. The first
+                classifier was abinary classifier wehre the there could only be two labels. The second classifier
+                extended the binary classifier to K classes, and the for the third classifer we used designed pairwise
+                Boolean classifiers for evey pair of classes. Finally, we implemented Randomized Feature Based Least
+                Squares Classifiers that used non-linear mappings to create a "feature space" that would be used to
+                train the classfiers, and we compared the error rates.
+                <br><br>
+                In the Neural Network Project, we designed simple neural networks that used non-linear least squares to
+                aapproximate non-linear functions. Using non-least squares algorithms, the network calculate the weights
+                necessary to approximate the given non-linear functions. Specifcally, we used the Levenburg-Marquardt
+                algorithm to solve the non-linear least squares problem. To test the network, we randomly generated 500
+                different data-points and minimized the training loss with respect to the vector of weights that were
+                used to parameterize the network.
             </p>
             <div class="projLink-con">
                 <a href="https://the-threesixty-podcast.herokuapp.com/" target="_blank" class="projLink">Classifcation
@@ -36,10 +53,14 @@
                     Networks</a>
             </div>
             <div id="imgsProjCon">
-                <img src="/images/The360/360launch.png" id="imgsProj">
-                <img src="/images/The360/360home.PNG" id="imgsProj">
-            </div>
+                <img src="/images/ML/bin.png" id="imgsProj">
+                <img src="/images/ML/NNFunction.png" id="imgsProj">
 
+            </div>
+            <div id=imgsProjCon>
+                <img src="/images/ML/ova.png" id="imgsProj">
+                <img src="/images/ML/LMSig.png" id="imgsProj">
+            </div>
         </div>
     </div>
 
