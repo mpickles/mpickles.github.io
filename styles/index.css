@@ -370,8 +370,7 @@ section img#mountainsFore {
     }
 
     #aboutMe img {
-        width: 40vh;
-        height: 40vh;
+        width: 90vw;
         margin-left: 10px;
     }
 
@@ -383,7 +382,7 @@ section img#mountainsFore {
     }
 
     .sec h2 {
-        margin-top: 12vh;
+        margin-top: 15vh;
         margin-left: 2vh;
         font-size: 6vh;
         margin-bottom: 1vh;
