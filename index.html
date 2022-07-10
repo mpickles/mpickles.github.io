@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=0, initial-scale=1.0">
+    <title>Max Pickard</title>
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+    <link rel="stylesheet" type="text/css" href="styles/index.css">
+</head>
+
+<body>
+    <!-- NAV BAR  -->
+    <!-- class=active will highlight the navbar, need to implement eventually -->
+    <header>
+        <a href="#" class="logo">Max Pickard</a>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Projects</a></li>
+            <li><a href="#con">Contact</a></li>
+        </ul>
+    </header>
+
+    <!-- Main Page  -->
+    <section id="first" style="background: linear-gradient(#f46005 30%, #f8c408)">
+        <img src="/images/bg/LakeSun.png" id="lake_sun">
+        <img src="/images/bg/LakeBackground.png" id="lake_mountains_behind">
+        <h2 id="text">I'm Max Pickard</h2>
+        <h2 id="subText">Welcome!</h2>
+        <img src="/images/bg/LakeForeground.png" id="lake_mountains_front">
+        <img src="/images/bg/Fisherman.png" id="fisher" style="z-index:10">
+    </section>
+
+    <!-- ABOUT ME -->
+    <div class="sec" id="about" style=" background: linear-gradient(black 1%, #36a3f1);">
+        <h2 id="aboutTitle">About Me</h2>
+        <div id="aboutMe">
+            <p style="background:transparent" id="aboutText">
+                I am a 4th Year student at the University of California San Diego with a love for solving problems,
+                riddles, and puzzles. I am majoring in Applied Mathematics and minoring in Economics. My main interests
+                in school are data science, statistical analysis, numerical optimization, and game theory.
+                <br><br>
+                Outside of school, I enjoy analyzing statistics from the NFL and discussing predictions for games and
+                fantasy football. Specifically, the Seattle Seahawks and Los Angeles Chargers. I also enjoy reading and
+                watching videos about Quantum Computing, Blockchain technologies, and other breakthroughs in math and
+                computer science.
+                <br><br>
+            </p>
+            <img src="/images/bg/max.jpg" id="aboutImg">
+        </div>
+
+        <section class="row-full" id="second">
+            <img src="/images/bg/stars.png" id="stars">
+            <img src="/images/bg/MountainMoon.png" id="mountainMoon" style=" left: -100px;">
+            <img src="/images/bg/Mountain.png" id="mountain">
+            <img src="/images/bg/MountainBackground.png" id="mountainsBack">
+            <img src="/images/bg/MountainForeground.png" id="mountainsFore">
+
+        </section>
+    </div>
+
+    <!-- PORTFOLIO -->
+    <!-- last color should match background scene gradient -->
+    <div class="sec" id="portfolio" style=" background: linear-gradient(#121f00 10%, rgb(59, 4, 147)); z-index: 10; ">
+        <h2 id="portTitle">Projects</h2>
+        <!-- Center Grid and add content -->
+        <div class="container">
+            <div class=" grid-container" id="portGrid">
+
+                <a href="/projects/threesixty.html">
+                    <div class="btn btn-one" style="--tileImg: url(/images/The360/360LogoFull.png);  z-index: 10;">
+                        <span>THE 360 Podcast Website</span>
+                        <img src="/images/The360/360LogoFull.png">
+                    </div>
+                </a>
+
+                <a href="/projects/qubitVis.html" style="--tileImg: url(/images/qubitVis/qubitIcon.png);  z-index: 10;">
+                    <div class="btn btn-one">
+                        <span>Single-Qubit Gate Visualizer</span>
+                        <img src="/images/qubitVis/qubitIcon.png">
+                    </div>
+                </a>
+
+                <a href="/projects/salesman.html"
+                    style="--tileImg: url(/images/salesman/breifcaseLogo.jpg);  z-index: 10;">
+                    <div class="btn btn-one">
+                        <span>Traveling Salesman Quantum Algorithm</span>
+                        <img src="/images/salesman/breifcaseLogo.jpg">
+                    </div>
+                </a>
+
+
+                <a href="/projects/ML.html" style="--tileImg: url(/images/quanTic/ticLogo.jpg);  z-index: 10;">
+                    <div class="btn btn-one">
+                        <span>Classification Models and Neural Networks from Linear Alegbra</span>
+                        <img src="/images/quanTic/ticLogo.jpg">
+                    </div>
+                </a>
+                <!-- 
+                <a href="/projects/spotifyTree.html"
+                    style="--tileImg: url(/images/spotifyTree/spotLogo2.png);  z-index: 10;">
+                    <div class="btn btn-one">
+                        <span>Spotify L-System Generated Trees</span>
+                        <img src="/images/spotifyTree/spotLogo2.png">
+                    </div>
+                </a>
+
+                <a href="/projects/threesixty.html">
+                    <div class="btn btn-one" style="--tileImg: url(/images/The360/360LogoFull.png);  z-index: 10;">
+                        <span>THE 360 Podcast Website</span>
+                        <img src="/images/The360/360LogoFull.png">
+                    </div>
+                </a>
+
+                <a href="/projects/qubitVis.html" style="--tileImg: url(/images/qubitVis/qubitIcon.png);  z-index: 10;">
+                    <div class="btn btn-one">
+                        <span>Single-Qubit Gate Visualizer</span>
+                        <img src="/images/qubitVis/qubitIcon.png">
+                    </div>
+                </a>
+
+                <a href="/projects/salesman.html"
+                    style="--tileImg: url(/images/salesman/breifcaseLogo.jpg);  z-index: 10;">
+                    <div class="btn btn-one">
+                        <span>Traveling Salesman Quantum Algorithm</span>
+                        <img src="/images/salesman/breifcaseLogo.jpg">
+                    </div>
+                </a>
+
+                <a href="/projects/spotifyTree.html"
+                    style="--tileImg: url(/images/spotifyTree/spotLogo2.png);  z-index: 10;">
+                    <div class="btn btn-one">
+                        <span>Spotify L-System Generated Trees</span>
+                        <img src="/images/spotifyTree/spotLogo2.png">
+                    </div>
+                </a>
+
+                <a href="/projects/ML.html" style="--tileImg: url(/images/spotifyTree/spotLogo2.png);  z-index: 10;">
+                    <div class="btn btn-one">
+                        <span>Classification Models and Neural Networks from Linear Alegbra</span>
+                        <img src="/images/quanTic/ticLogo.jpg">
+                    </div>
+                </a> -->
+
+            </div>
+        </div>
+        <!-- CONTACT INFO -->
+        <section class="row-full" id="third">
+            <h2 id="contactTitle">Contact Me</h2>
+            <p id="contactSub">Email: maxapickard@gmail.com</p>
+            <div class="contact-con" id="contact-con" style="z-index: 11">
+                <a href="https://www.linkedin.com/in/maxwellapickard/" target="_blank" class="linkedin">LinkedIn</a>
+                <a href="https://github.com/mpickles" target="_blank" class="linkedin">Github</a>
+            </div>
+            <img src="/images/bg/stars.png" id="stars" style="z-index:3">
+            <img src="/images/bg/BeachBackground.png" id="beachBack" style="z-index: 10">
+            <img src="/images/bg/BeachSun.png" id="beachSun" style="z-index: 10">
+            <img src="/images/bg/BeachBirds.png" id="birds" style="z-index: 10">
+            <img src="/images/bg/BeachCover.png" id="cover" style="z-index: 10">
+            <img src="/images/bg/Cover.png" id="cover2" style="z-index: 10">
+            <img src=" /images/bg/BeachForeground.png" id="beachFore" style="z-index: 10">
+        </section>
+        <div id="con"></div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
+    <script src="scriptMain.js"></script>
+    <script>window.onbeforeunload = function () {
+            window.scrollTo(0, 0);
+        }</script>
+
+</body>
+
+</html>

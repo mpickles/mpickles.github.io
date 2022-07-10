@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Max Pickard | The 360 Podcast</title>
+    <link rel="stylesheet" type="text/css" href="/styles/main.css">
+    <link rel="stylesheet" type="text/css" href="/styles/projects.css">
+</head>
+
+<body>
+    <div style="background: linear-gradient(black 1%, rgb(111, 0, 255))">
+        <header>
+            <a href="#" class="logo">Max Pickard</a>
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/index.html#about">About</a></li>
+                <li><a href="/index.html#portfolio">Projects</a></li>
+                <li><a href="/index.html#contact-con">Contact</a></li>
+            </ul>
+        </header>
+        <div class="secProj" style="margin-top: 10px;">
+            <h2 id="projTitle">Single-Qubit Gates Visualizer</h2>
+            <h3 id="projSub">GUI Application | Python, Tkinter, & Qiskit</h3>
+            <p style="background:transparent" id="aboutText">
+                This Tkinter GUI application allows users to input a series of single-qubit gates and visualize those
+                gates on a bloch sphere using Qiskit. Users choose from 11 different single-qubit gates and can input up
+                to 10 different gates at a time. The visualizer goes through each inputted gate step-by-step and
+                animates the associated bloch sphere rotation, allowing users to better understand the effects of the
+                applying single-qubit gates on the state vector.
+            </p>
+            <div class="projLink-con">
+                <a href="https://github.com/mpickles/single-qubit-gates-visualizer" target="_blank"
+                    class="projLink">Github</a>
+            </div>
+            <div id="imgsProjCon">
+                <img src="/images/qubitVis/inputGate.png" id="imgsProj">
+                <img src="/images/qubitVis/visInputs.png" id="imgsProj">
+                <img src="/images/qubitVis/qubit.png" id="imgsProj">
+                <img src="/images/qubitVis/qubitViz.gif" id="imgsProj">
+            </div>
+
+        </div>
+    </div>
+
+
+    <footer>
+        <h1>Max Pickard 2022</h1>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
+    <script src="/scriptProj.js"></script>
+
+</body>
+
+
+
+</html>

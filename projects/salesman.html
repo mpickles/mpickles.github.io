@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Max Pickard | The 360 Podcast</title>
+    <link rel="stylesheet" type="text/css" href="/styles/main.css">
+    <link rel="stylesheet" type="text/css" href="/styles/projects.css">
+</head>
+
+<body>
+    <div style="background: linear-gradient(black 1%, rgb(255, 255, 0))">
+        <header>
+            <a href="#" class="logo">Max Pickard</a>
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/index.html#about">About</a></li>
+                <li><a href="/index.html#portfolio">Projects</a></li>
+                <li><a href="/index.html#contact-con">Contact</a></li>
+            </ul>
+        </header>
+        <div class="secProj" style="margin-top: 10px;">
+            <h2 id="projTitle">Traveling Salesman Quantum Algorithm</h2>
+            <h3 id="projSub">Case Study | Python, Qiskit </h3>
+            <p style="background:transparent" id="aboutText">
+                After being inspired by <a href="https://arxiv.org/pdf/1805.10928.pdf" style="color: white"><u>this
+                        paper</u></a>, I decided to spend time learning how the researchers Quantum Alogirthm worked and
+                learn how to implement it myself. By encoding the cost (distance/time/fuel usage) of traveling between
+                cities into the phase ofa qubit, we can create linear combinations of these phases and find the minimum.
+                This is done by encoding all possible routes into eigenstates and then using a phase estimation
+                alogirthm to get the binary output of the phase. This binary output is then converted to integers and an
+                algorithm is used to find the minimum. <br><br> For this project, I decided to find the minimum travel
+                time (cost) between San Diego, Los Angeles, Santa Barbara, and Palm Springs using the above algorithm.
+                Then, to find the minimum cost, Durr and Hoyer's Quantum Algorithm for finding the minimum was
+                implemented as to return the index of the minimum cost
+            </p>
+            <div class="projLink-con">
+                <a href="https://arxiv.org/pdf/1805.10928.pdf" target="_blank" class="projLink">Original
+                    Paper</a>
+                <a href="https://github.com/atsuyahasegawa/Efficient-quantum-algorithm-for-solving-travelling-salesman-problem"
+                    target="_blank" class="projLink">Original Github</a>
+                <a href="#" target="_blank" class="projLink">Github</a>
+            </div>
+            <div id="imgsProjCon">
+                <img src="/images/salesman/title.png" id="imgsProj">
+                <img src="/images/salesman/qCircuit.png" id="imgsProj">
+            </div>
+            <div id="imgsProjCon">
+                <img src="/images/salesman/unitary.png" id="imgsProj">
+                <img src="/images/salesman/measure.png" id="imgsProj">
+            </div>
+            <div id="imgsProjCon">
+                <img src="/images/salesman/cities.png" id="imgsProj">
+                <img src="/images/salesman/expoSearch.png" id="imgsProj">
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+        <h1>Max Pickard 2022</h1>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
+    <script src="/scriptProj.js"></script>
+
+</body>
+
+
+
+</html>

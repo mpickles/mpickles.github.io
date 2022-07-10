@@ -1,0 +1,146 @@
+.secProj {
+    position: relative;
+    overflow: hidden;
+}
+
+.secProj h2 {
+    color: #ffff;
+}
+
+.secProj h3 {
+    color: #ffff;
+}
+
+.secProj p {
+    color: #ffff;
+}
+
+/* CONTINUE ADDING TO MEDIA RULES HERE  */
+
+
+
+#imgsProj {
+    transition: all 0.5s;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+
+#imgsProj:hover {
+    transform: scale(1.01);
+}
+
+.projLink-con {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    overflow: hidden;
+}
+
+.projLink {
+    display: inline-block;
+    background-color: #FFF;
+    text-decoration: none;
+    border-radius: 40px;
+    color: #2b1055;
+    border: 1px solid white;
+    transition: all 0.5s;
+}
+
+.projLink:hover {
+    transition: 0.5s;
+    background-color: transparent;
+    border: 1px solid white;
+    color: #FFF;
+}
+
+@media only screen and (min-width: 601px) {
+    .secProj {
+        padding-top: 50px;
+        padding-left: 4vw;
+        padding-right: 100px;
+    }
+
+    .secProj h2 {
+        margin: 0;
+        font-size: 4vw;
+    }
+
+    .secProj h3 {
+        margin: 0;
+        font-size: 1.5vw;
+        margin-bottom: 10px;
+    }
+
+    .secProj p {
+        font-size: 1.1vw;
+        margin: 10px;
+    }
+
+    #imgsProjCon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    #imgsProj {
+        margin: 10px;
+        height: 50vh;
+        width: 50vw;
+    }
+
+    .projLink {
+        margin: 10px;
+        padding: 8px 30px;
+        font-size: 3vh;
+    }
+
+}
+
+
+@media only screen and (max-width: 600px) {
+
+    .secProj {
+        display: inline-block;
+        text-align: center;
+        padding-top: 10vh;
+        padding-left: 4vw;
+        padding-right: 4vw;
+        margin: 0;
+
+    }
+
+    .secProj h2 {
+        margin: 0;
+        font-size: 10vw;
+    }
+
+    .secProj h3 {
+        margin: 0;
+        font-size: 5vw;
+        margin-bottom: 10px;
+    }
+
+    .secProj p {
+        font-size: 3.5vw;
+        /* margin: 10px; */
+    }
+
+    .projLink {
+        margin: 10px;
+        padding: 8px 30px;
+        font-size: 1.75vh;
+    }
+
+
+    #imgsProj {
+        /* margin: 10px; */
+        max-width: 100%;
+        width: 95vw;
+    }
+
+    #imgsProj:hover {
+        transform: scale(1.01);
+    }
+}

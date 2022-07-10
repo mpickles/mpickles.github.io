@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --content-size: 15vw;
+    --content-size-mob: 40vw;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Josefin Sans', sans-serif; */
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    overflow-x: hidden;
+    /* overflow-y: hidden; */
+}
+
+a {
+    text-decoration: none;
+}
+
+div {
+    margin: 0px;
+    padding: 0px;
+    float: left;
+    clear: none;
+}
+
+/* Nav Bar */
+header {
+    position: fixed;
+    background-color: black;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1001
+}
+
+header .logo {
+    color: #ffff;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+header ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li {
+    list-style: none;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: #ffff;
+    border-radius: 20px;
+
+}
+
+header ul li a:hover,
+header ul li a.active {
+    background: #ffff;
+    color: #2b1055
+}
+
+/* Background */
+
+section {
+    position: relative;
+    width: 100%;
+    /* img text betwen mountains */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+footer {
+    /* position: absolute; */
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+/* If the screen size is 601px or more */
+@media only screen and (min-width: 601px) {
+    header {
+        padding: 2px 100px;
+    }
+
+    header .logo {
+        font-size: 2em;
+    }
+
+    header ul {
+        justify-content: center;
+        align-items: center;
+    }
+
+    header ul li {
+        margin-left: 20px;
+    }
+
+    header ul li a {
+        padding: 6px 15px;
+    }
+
+    section {
+        height: 100vh;
+        padding: 100px;
+
+    }
+}
+
+/* screen size is 600px or less */
+@media only screen and (max-width: 600px) {
+    header {
+        padding: 2px 10px;
+        display: block;
+        text-align: center;
+    }
+
+    header .logo {
+        /* margin-left: 3vw; */
+        margin-bottom: 1vh;
+        font-size: 12vw;
+    }
+
+    header ul {
+        justify-content: center;
+        align-items: center;
+    }
+
+    header ul li {
+        margin-left: 3vw;
+    }
+
+
+    header ul li a {
+        padding: 1px 10px;
+    }
+
+    section {
+        height: 100vh;
+        padding: 0px;
+    }
+
+    header ul li a:hover,
+    header ul li a.active {
+        background: #ffff;
+        color: #2b1055
+    }
+
+}
