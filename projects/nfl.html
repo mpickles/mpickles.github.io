@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Max Pickard | The 360 Podcast</title>
+    <link rel="stylesheet" type="text/css" href="/styles/main.css">
+    <link rel="stylesheet" type="text/css" href="/styles/projects.css">
+</head>
+
+<body>
+    <div style="background: linear-gradient(black 1%, rgb(9, 113, 6))">
+        <header>
+            <a href="/index.html" class="logo">Max Pickard</a>
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/index.html#about">About</a></li>
+                <li><a href="/index.html#portfolio">Projects</a></li>
+                <li><a href="/index.html#contact-con">Contact</a></li>
+            </ul>
+        </header>
+        <div class="secProj" style="margin-top: 10px;">
+            <h2 id="projTitle">NFL Fantasy Football Rank Predictor</h2>
+            <h3 id="projSub"> Case Study | Pandas, Sci-Kit Learn, Keras</h3>
+            <p style="background:transparent" id="aboutText">
+                Using statisitics from 2011-2021 web-scrapped from Pro Football Reference, we break up that stats by
+                offensive postion and use a neural network model to predict the top 10 ranked PPR (Points per reception)
+                fantasy players at each postion (RB, QB, WR, TE). The stats used in the model were in-games stats such
+                as reception yards, rushing years, touchdowns, fumbles, etc. Age, usage, and the previous PPR points
+                were also used. To perform hyperparameter tuning, we used the keras package to build the models and
+                cross-validate models with grid search to find the optimal parameters.
+            </p>
+            <div class="projLink-con">
+                <a href="https://github.com/mpickles/nfl-fantasy-football/tree/master" target="_blank"
+                    class="projLink">Github</a>
+                <a href="/images/football/fantasy-football-nn.pdf" target="_blank" class="projLink" download>Download
+                    PDF</a>
+
+
+            </div>
+            <div id="imgsProjCon">
+                <img src="/images/football/start.png" id="imgsProj">
+                <img src="/images/football/predsRBQB.png" id="imgsProj">
+            </div>
+
+        </div>
+    </div>
+    <footer>
+        <h1>Max Pickard 2022</h1>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
+    <script src="/scriptProj.js"></script>
+
+</body>
+
+
+
+</html>
