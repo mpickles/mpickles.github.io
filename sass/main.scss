@@ -32,8 +32,8 @@ $dark: #040404;
   
     --bs-body-font-family: 'Inter', sans-serif;;
 
-    body {
-      overflow: hidden; /* Hide scrollbars */
+    body::-webkit-scrollbar{
+      display: none;
     }
 
     .card{
