@@ -32,6 +32,10 @@ $dark: #040404;
   
     --bs-body-font-family: 'Inter', sans-serif;;
 
+    body {
+      overflow: hidden; /* Hide scrollbars */
+    }
+
     .card{
         transition: border-color 1s, box-shadow .25s;
       }
