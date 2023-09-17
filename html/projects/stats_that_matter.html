@@ -1,0 +1,458 @@
+<html lang="en" style="scroll-padding-top: 75px">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../../css/main.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <title>Maxwell Pickard</title>
+</head>
+
+<body class="bg-light text-dark">
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-md fixed-top navbar-dark bg-dark">
+        <div class="container-xxl">
+            <!-- website icon -->
+            <a href="../index.html" class="navbar-brand">
+                <span class="fw-bold text-light">
+                    <h2>MP</h2>
+                </span>
+            </a>
+            <!-- toggle button for mobile -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav"
+                aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- navbar links-->
+            <div class="collapse navbar-collapse justify-content-end align-center mx-5" id="main-nav">
+                <ul class="navbar-nav">
+                    <li class="nav-item mx-3">
+                        <a href="../index.html" class="nav-link">
+                            <h5>HOME</h5>
+                        </a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a href="../about.html" class="nav-link">
+                            <h5>ABOUT ME</h5>
+                        </a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a href="../portfolio.html" class="nav-link">
+                            <h5>PORTFOLIO</h5>
+                        </a>
+                    </li>
+                    <!-- resume download -->
+                    <li class="nav-item ms-2 d-none d-md-inline">
+                        <a href="../assets/maxwell-pickard-resume.pdf" download="max-pickard-resume"
+                            class="btn btn-primary">MY RESUME<i class="bi bi-download"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- hero -->
+    <section id="home" class="bg-light text-dark my-5" style="height: 85%">
+        <div class="container-lg">
+            <div class="row justify-content-center align-items-center h-100 ">
+                <div class="col-lg-7 col-12 mt-3 mt-lg-5 mb-lg-2">
+                    <img src="../../assets/project_images/stats_matter/title.PNG" alt="..."
+                        class="img-fluid float-lg-start my-2 mx-auto rounded-2 border border-3 border-dark d-block">
+                </div>
+                <div class="col-12 text-center text-lg-end mx-2">
+                    <h1 class="fw-bold text-center mb-3">Stats That Matter in PPR Fantasy Football</h1>
+                    <h5 class="text-center">Python, SQL, Streamlit</h5>
+                    <div class="row justify-content-center align-items-center mt-3 mt-lg-3">
+                        <div class="col-lg-4 col-12">
+                            <a href="" class="w-100 my-3 btn btn-lg btn-light border border-dark">Streamlit (Coming
+                                Soon)<i class="bi bi-arrow-right"></i></a>
+                        </div>
+                        <div class="col-lg-4 col-12">
+                            <a href="https://github.com/mpickles/nfl_analysis/blob/main/notebooks/9_legendary_rb_breakouts.ipynb"
+                                target="_blank" class="w-100 btn btn-lg btn-light border border-dark">GitHub<i
+                                    class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Summary -->
+    <section id="summary" class="mx-3">
+        <div class="container-lg">
+            <div class="row align-items-center justify-content-center">
+                <h2 class="text-start fw-bold mb-3">ABOUT THIS PROJECT</h2>
+                <p class="lead">
+                    In this project, I dove into five years' worth of fantasy football data spanning QB, RB, WR, and TE
+                    positions. My goal was to find stats that strongly influenced fantasy football rankings and then
+                    spot players in the 2022 season with similar stats, aiming to pinpoint those likely to reach the top
+                    12 or 24 ranks.
+                    <br><br>
+                    To get this project rolling, I collected data from FantasyPros.com covering the 2018-2022 seasons.
+                    After giving it a good scrub to make sure it was reliable, I stored it in a local MySQL database for
+                    easy analysis.
+                    <br><br>
+                    Now, some stats like touchdowns and yards naturally play a big role in fantasy points, but what
+                    really piqued my interest were the less obvious stats that can make or break a player's fantasy
+                    season.
+                    <br><br>
+                    For this, I chose stats taht had a correlation coefficient with fantasy points over 0.75, meaning
+                    they had a fairly high correlation.
+                </p>
+            </div>
+    </section>
+
+    <!-- Quarterbacks -->
+    <section id="qb" class="my-3 mx-3">
+        <div class="container-lg">
+            <div class="row align-items-center justify-content-center">
+                <h2 class="fw-bold my-3">PROJECT FINDINGS</h2>
+                <h2 class="fw-bold">Quarterbacks</h2>
+                <!-- stats -->
+                <p class="lead">
+                    When it comes to quarterbacks, a couple of stats really stood out:
+                    <br><br>
+                    <span class="fw-bold"> - Rushing Attempts (0.78 correlation coefficient):</span><br>
+                    This one's all about mobile, dual-threat quarterbacks. More rushing attempts usually mean they're
+                    using their legs to score fantasy points.
+                    <br><br>
+                    <span class="fw-bold">- Redzone Attempts (0.92 correlation coefficient): </span><br>
+                    If a quarterback has a lot of red zone attempts, that often translates to more
+                    touchdowns. It's a sign of a potent offense with plenty of scoring opportunities.
+                </p>
+                <!-- correlation matrix -->
+                <div class="col-lg-10 col-12 my-5">
+                    <img src="../../assets/project_images/stats_matter/qb_corr.png" alt="..."
+                        class="img-fluid float-lg-start mx-auto rounded-2 border border-3 border-dark d-block">
+                </div>
+                <!-- extra -->
+                <p class="lead">
+                    Surprisingly, Sacks and Interceptions, despite being seen as negative plays, actually have
+                    a positive correlation with fantasy points. The reason? To get those stats, you've got to be
+                    out on the field making plays.
+                    <br><br>
+                    Other important stats like Completion Percentage, Pass Attempts, and Air Yards make sense too.
+                    They're closely tied to Passing Yards, which are a big part of PPR scoring. In essence, we're
+                    looking for QBs who throw the ball a lot and do it accurately.
+                </p>
+                <!-- analysis -->
+                <h4 class="fw-bold"> QB Data Analysis</h4>
+                <p class="lead">When we dug into the data from the past five years, an intriguing trend emerged.
+                    Quarterbacks who ranked in the top 15 for both Rushing Attempts and Redzone Targets in a given year
+                    tended to maintain their positions within the top 12 the following year, often showing improvements
+                    in their overall rankings (with 8 out of 14 actually improving).
+                    <br><br>
+                    Usually, if they were in the top 10, they managed to remain there in the subsequent year. The only
+                    exception in this regard was Justin Herbert in 2022, who, unfortunately, faced an injury that
+                    interrupted his season. This trend underscores the importance of these dual-threat capabilities -
+                    both rushing attempts and redzone targets - as key indicators of a quarterback's fantasy football
+                    performance.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="rb" class="my-3  mx-3">
+        <div class="container-lg">
+            <div class="row align-items-center justify-content-center">
+                <h2 class="fw-bold">Running Backs</h2>
+                <!-- stats -->
+                <p class="lead">
+                    When it comes to running backs, there are a few standout stats that caught my eye:
+                    <br><br>
+                    <span class="fw-bold">- Implied Attempts (0.97):</span><br>
+                    This is a stat that combines Rushing Attempts and Targets. More touches mean
+                    more opportunities to score, making it a vital indicator of a running back's fantasy potential.
+                    <br><br>
+                    <span class="fw-bold">- Snaps (0.93):</span><br>
+                    Snaps represent how many plays a running back was on the field for. The more they're
+                    out there, the more chances they have to put points on the board. It's all about opportunity.
+                    <br><br>
+                    <span class="fw-bold">- Broken Tackles (0.84):</span><br>
+                    Broken Tackles are a fascinating metric that tells us how elusive or powerful
+                    a running back is. The more tackles they break, the more you can count on them to gain extra yards.
+                    <br><br>
+                    <span class="fw-bold">- Green Zone Attempts (0.83):</span><br>
+                    This one looks at plays that occur between the 5-yard line and the opponent's endzone. It's a great
+                    indicator of how often a running back gets the opportunity to score a touchdown, a critical fantasy
+                    factor.
+                    <br><br>
+                    <span class="fw-bold">- Explosive Plays (0.78):</span><br>
+                    This stat measures the number of plays that go for 20+ yards. It gives us
+                    insight into a running back's explosive playmaking ability and their knack for large chunk gains.
+                </p>
+                <div class="col-lg-10 col-12 my-5">
+                    <img src="../../assets/project_images/stats_matter/rb_corr.png" alt="..."
+                        class="img-fluid float-lg-start mx-auto rounded-2 border border-3 border-dark d-block">
+                </div>
+                <h4 class="fw-bold">RB Data Analysis</h4>
+                <p class="lead">
+                    When I dug into the running back data from the last five years, I noticed something interesting.
+                    Predicting how running backs will do in the future can be a bit of a puzzle, but some stats really
+                    popped out. Every running back who made it to the top 30 for Implied Attempts,
+                    Snaps, Broken Tackles, Green Zone Attempts, and Explosive Plays ended up in the top 20 the next
+                    year. Except for Derrick Henry in 2021 and David Montgomery in 2022 - but they hung around the top
+                    24. Most others, though, saw their rankings drop in the following year. Over those five seasons, 17
+                    out of 29 running backs actually fell in their rankings. Something important to note: running backs
+                    who hit the top 30 in all five stats but weren't in the top 15 initially often jumped into the top
+                    12 the next year, except for David Montgomery in 2021.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="wr" class="my-3  mx-3">
+        <div class="container-lg">
+            <div class="row align-items-center justify-content-center">
+                <h2 class="fw-bold">Wide Recievers</h2>
+                <!-- stats -->
+                <p class="lead">
+                    Here are the stats that sttod out for Wide Receivers:
+                    <br><br>
+                    <span class="fw-bold">- Target Share (0.96):</span><br>
+                    This stat represents the percentage of the team's total
+                    targets that a receiver gets. The higher this number, the more integral the receiver is to their
+                    team's passing game.
+                    <br><br>
+                    <span class="fw-bold">- Targets (0.97):</span><br>
+                    It's pretty straightforward - this stat tells us the total number of times a
+                    receiver was targeted. More targets usually mean more chances to make plays and score points for
+                    fantasy.
+                    <br><br>
+                    <span class="fw-bold">- Redzone Targets (0.84):</span><br>
+                    These are the targets a receiver gets when they're in the red zone,
+                    typically between the 20-yard line and the opponent's endzone. Redzone targets are crucial because
+                    they often lead to touchdowns, a significant fantasy booster.
+                    <br><br>
+                    And while we won't consider Receptions, Receiving Yards, and Touchdowns here because they're already
+                    built into PPR scoring, it's worth noting that Air Yards, Yards After Catch, and Yards After Contact
+                    are subsets of Receiving Yards."
+                </p>
+                <!-- correlation matrix -->
+                <div class="col-lg-10 col-12 my-5">
+                    <img src="../../assets/project_images/stats_matter/wr_corr.png" alt="..."
+                        class="img-fluid float-lg-start mx-auto rounded-2 border border-3 border-dark d-block">
+                </div>
+                <!-- analysis -->
+                <h4 class="fw-bold">WR Data Analysis</h4>
+                <p class="lead">
+                    In most years, being in the top 30 for Target Share, Targets, and Red Zone Targets indicated that a
+                    player would likely secure a spot among the top 24 overall receivers in the following year, often
+                    even within the top 12. However, a notable pattern emerged: when a player ranked in the top 30 for
+                    all three stats but fell outside the top 20 overall, they tended to make a significant leap in the
+                    rankings, often landing within the top 10 overall the following year. There was only one exception
+                    to this trend, Terry McLaurin in 2020.
+                    <br><br>
+                    Of course, there were instances where receivers fell out of the top 24 the following year, but this
+                    was often due to injury, such as in the case of Michael Pittman in 2021.
+                    <br><br>
+                    Here are a few notable examples:
+                    <br><br>
+                    - <span class="fw-bold">Jarvis Landry (2018):</span> Ranked 22 -> Next Year Rank 14 <br><br>
+                    - <span class="fw-bold">Julian Edelman (2018):</span> Ranked 23 -> Next Year Rank 13 <br><br>
+                    - <span class="fw-bold">Davante Adams (2019):</span> Ranked 29 -> Next Year Rank 1 <br><br>
+                    - <span class="fw-bold">DJ Moore (2019):</span> Ranked 21 -> Next Year Rank 17 <br><br>
+                    - <span class="fw-bold">DK Metcalf (2019):</span> Ranked 30 -> Next Year Rank 5 <br><br>
+                    - <span class="fw-bold">Terry McLaurin (2020):</span> Ranked 24 -> Next Year Rank 23 <br><br>
+                    - <span class="fw-bold">Cooper Kupp (2020):</span> Ranked 34 -> Next Year Rank 1 <br><br>
+                    - <span class="fw-bold">Jaylen Waddle (2021):</span> Ranked 21 -> Next Year Rank 7 <br><br>
+                    - <span class="fw-bold">Amon-Ra St. Brown (2021):</span> Ranked 23 -> Next Year Rank 9 <br><br>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id=te" class="my-3  mx-3">
+        <div class="container-lg">
+            <div class="row align-items-center justify-content-center">
+                <h2 class="fw-bold">Tight Ends</h2>
+                <p class="lead">
+                    When looking at tight ends, it's easy to notice the stats that stand out are the same as the stats
+                    that stood out for wide receivers, which makes sense because tight ends mainly score points as pass
+                    catchers.:
+                    <br><br>
+                    <span class="fw-bold">- Target Share (0.96)</span><br>
+                    <br>
+                    <span class="fw-bold">- Targets (0.97)</span><br>
+                    <br>
+                    <span class="fw-bold">- Redzone Targets (0.85)</span><br>
+                </p>
+                <div class="col-lg-10 col-12 my-5">
+                    <img src="../../assets/project_images/stats_matter/te_corr.png" alt="..."
+                        class="img-fluid float-lg-start mx-auto rounded-2 border border-3 border-dark d-block">
+                </div>
+                <h4 class="fw-bold">TE Data Analysis</h4>
+                <p class="lead">
+                    When I took a deep dive into tight end data spanning five years, a trend similar to what we saw with
+                    wide receivers emerged. If a tight end made it to the top 15 for Target Share,
+                    Targets, and Red Zone Targets, they typically found themselves in the top 12 overall the following
+                    year. There were a couple of outliers: Kyle Rudolph in 2018 and Tyler Higbee in 2021.
+                    <br><br>
+                    But here's the really interesting part - if a tight end wasn't initially in the top 10 overall, they
+                    often managed to climb into that elite top 10 club the following year.
+                    <br><br>
+                    Here are some examples:
+                    <br><br>
+                    <span class="fw-bold">Mike Gesicki (2019):</span> Ranked 11 -> Next Year Rank 6 <br>
+                    <span class="fw-bold">Hunter Henry (2020):</span> Ranked 15 -> Next Year Rank 7 <br>
+                    <span class="fw-bold">Dalton Schultz (2020):</span> Ranked 17 -> Next Year Rank 3 <br>
+                    <span class="fw-bold">Cole Kmet (2021):</span> Ranked 22 -> Next Year Rank 7 <br>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id=te" class="my-3 mx-3">
+        <div class="container-lg">
+            <div class="row align-items-center justify-content-center">
+                <h2 class="fw-bold">Who Should We Watch in 2023?</h2>
+                <p class="lead">
+                    To figure out our watchlist for 2023, we're keeping an eye on the top 15 players in the stats we've
+                    talked about for quarterbacks and tight ends. For wide receivers and running backs, we're casting a
+                    wider net and looking at the top 30 players in the relevant stats. The reason behind this is that in
+                    most fantasy leagues, you've got 12 teams, and you start 1 quarterback, 1 tight end, 2 wide
+                    receivers, and 2 running backs. So, we're hunting for players who can shine in the QB1/TE1 and
+                    WR1-WR2/RB1-RB2 range.
+                </p>
+                <h3 class="fw-bold">2023 Quarterbacks</h3>
+                <div class="row">
+                    <div class="col-lg-3">
+                        <ul class="lead">
+                            <li>Patrick Mahomes II</li>
+                            <li>Josh Allen</li>
+                            <li>Lamar Jackson</li>
+                            <li>Joe Burrow</li>
+                            <li>Justin Herbert</li>
+                            <li>Trevor Lawrence</li>
+                            <li>Geno Smith</li>
+                        </ul>
+                    </div>
+                </div>
+                <h3 class="fw-bold">2023 Running Backs</h3>
+                <div class="row">
+                    <div class="col-lg-3">
+                        <ul class="lead">
+                            <li>Christian McCaffrey</li>
+                            <li>Saquon Barkley</li>
+                            <li>Nick Chubb</li>
+                            <li>Johnathan Taylor</li>
+                            <li>Derrick Henry</li>
+                            <li>Tony Pollard</li>
+                            <li>Josh Jacobs</li>
+                            <li>Rhamondre Stevenson</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3">
+                        <ul class="lead">
+                            <li>Travis Etienne Jr.</li>
+                            <li>Joe Mixon</li>
+                            <li>Dameon Pierce</li>
+                            <li>Miles Sanders</li>
+                            <li>Dalvin Cook</li>
+                            <li>Devin Singletary</li>
+                            <li>Jeff Wilson Jr.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <h3 class="fw-bold">2023 Wide Receivers</h3>
+                <div class="row">
+                    <div class="col-lg-3">
+                        <ul class="lead">
+                            <li>Justin Jefferson</li>
+                            <li>Ja'Marr Chase</li>
+                            <li>Stefon Diggs</li>
+                            <li>A.J. Brown</li>
+                            <li>Amon-Ra St. Brown</li>
+                            <li>Davante Adams</li>
+                            <li>Garrett Wilson</li>
+                            <li>DK Metcalf</li>
+                            <li>Amari Cooper</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3">
+                        <ul class="lead">
+                            <li>Chris Godwin</li>
+                            <li>Drake London</li>
+                            <li>Christian Kirk</li>
+                            <li>Brandon Aiyuk</li>
+                            <li>Michael Pittman Jr.</li>
+                            <li>Diontae Johnson</li>
+                            <li>Zay Jones</li>
+                        </ul>
+                    </div>
+                </div>
+                <h3 class="fw-bold">2023 Tight Ends</h3>
+                <div class="row">
+                    <div class="col-lg-3">
+                        <ul class="lead">
+                            <li>Travis Kelce</li>
+                            <li>Mark Andrews</li>
+                            <li>T.J. Hockenson</li>
+                            <li>George Kittle</li>
+                            <li>David Njoku</li>
+                            <li>Dalton Schultz</li>
+                            <li>David Njoku</li>
+                            <li>Tyler Higbee</li>
+                        </ul>
+                    </div>
+                </div>
+                <p class="lead">In some cases, players either signed with other teams or were traded. This creates an
+                    opportunity to consider their talent level vs their team: Was a player a viable fantasy option
+                    because of the system they played in or because they were super talented? In my personal belief, I
+                    think there are some players who will thrive as a result of some of these players who are currently
+                    listed being on different teams. I am most excted to watch <span class="fw-bold">James Cook</span>
+                    take over the
+                    Buffalo Bills
+                    backfield after Devin Singletary left to go to the Texans. I am also a strong believer in <span
+                        class="fw-bold">De'Von
+                        Achane</span> taking over the backfield in Miami and <span class="fw-bold">Jake Ferguson</span>
+                    replacing
+                    Dalton Schultz. There are
+                    other examples, but these are my personal thoughts.
+                    <br><br>
+                    Almost every player listed here is someone that I will be taking a closer look at during the draft
+                    process and am excited to watch throughout the season
+                </p>
+                <br><br>
+                <br><br>
+                <p class="lead">To see the code and follow my entire methodology, check out the Jupyter Notebook
+                    on
+                    Github or the
+                    Streamlit</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="bg-primary text-center text-dark">
+        <!-- Grid container -->
+        <div class="container p-2">
+            <!-- Section: Social media -->
+            <div class="row align-items-center justify-content-center">
+                <h2 class="fw-bold mt-2">
+                    FOLLOW ME:
+                    <!-- Linkedin -->
+                    <a class="btn btn-outline-light btn-floating m-1 btn-lg"
+                        href="https://www.linkedin.com/in/maxwellapickard/" target="_blank" role="button">
+                        <i class=" bi bi-linkedin"></i></a>
+                    <!-- Github -->
+                    <a class=" btn btn-outline-light btn-floating m-1 btn-lg" href="https://github.com/mpickles"
+                        target="_blank" role="button"><i class="bi bi-github""></i></a>
+                    <!-- Spotify -->
+                    <a class=" btn btn-outline-light btn-floating m-1 btn-lg"
+                            href="https://open.spotify.com/user/zuknzgwp31g5a54os4snd8g1w?si=59ae283b6a01496f"
+                            target="_blank" role="button"><i class="bi bi-spotify"></i></a>
+                </h2>
+
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
