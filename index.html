@@ -10,8 +10,8 @@
 
 <body class="bg-dark text-light">
     <!-- navbar -->
-    <nav class="navbar navbar-expand-md fixed-top navbar-dark bg-dark">
-        <div class="container-xxl">
+    <nav class="navbar navbar-expand-xxl fixed-top navbar-dark bg-dark">
+        <div class="container">
             <!-- website icon -->
             <a href="/" class="navbar-brand">
                 <span class="fw-bold text-light">
@@ -41,15 +41,10 @@
                             <h5>PORTFOLIO</h5>
                         </a>
                     </li>
-                    <!-- <li class="nav-item mx-3">
-                        <a href="../html/blog.html" class="nav-link">
-                            <h5>Blog/Scrapebook</h5>
-                        </a>
-                    </li> -->
                     <!-- resume download -->
                     <li class="nav-item ms-2 d-none d-md-inline">
-                        <a href="../assets/maxwell-pickard-resume.pdf" download="max-pickard-resume"
-                            class="btn btn-primary">MY RESUME <i class="bi bi-download"></i></a>
+                        <p><a href="../assets/maxwell-pickard-resume.pdf" download="max-pickard-resume"
+                            class="btn btn-primary">MY RESUME <i class="bi bi-download"></i></a></p>
                     </li>
                 </ul>
             </div>
@@ -85,13 +80,16 @@
         <div class=" container-lg ">
             <div class=" row justify-content-center align-items-center my-5">
                 <div class="col-md-8">
-                    <h1 class="text-start fw-bold">
+                    <h2 class="text-start fw-bold">
                         ABOUT ME
-                    </h1>
+                    </h2>
                     <p class="lead2">
                         A University of California San Diego graduate with a degree in Applied Math and a minor in
-                        Economics currently living in Berkeley, CA. I am an avid NFL football fan who likes to learn about math, coding, and the art of story telling.
-                        In my free time I enjoy cooking, watching movies, hiking, and listening to music.
+                        Economics currently living in Berkeley, CA. I am a former Alpaca Rancher from Washington State
+                        with interests in Machine Learning, Data Analysis, Econometrics, and A.I. 
+                        I am an avid NFL football fan who likes to learn about web design, fashion trends, pop culture, 
+                        and the art of story telling through various mediums. In my free time I enjoy cooking, watching movies,
+                         hiking, and listening to music.
                     </p>
                     <!-- button to about me page -->
                     <a href="../html/about.html" class="btn btn-primary btn-sm"> Learn More About Me <i
@@ -108,13 +106,26 @@
     <section id="portfolio">
         <div class="container-lg">
             <div class="text-start">
-                <h1 class="my-3 md-m-5 fw-bold">
+                <h2 class="my-3 md-m-5 fw-bold">
                     MY RECENT PROJECTS
-                </h1>
+                </h2>
             </div>
             <div class="row align-items-center justify-content-center m-3 lg-m-5 g-3" >
                 <div class="row " >
                     <!-- Card 1 -->
+                    <div class="col-12 col-lg-6 my-2">
+                        <div class="border-0">
+                            <div class="card bg-light h-100" style="width: 100%;">
+                                <img src="../assets/project_images/power_bi/dashboard.PNG" class="card-img-top"
+                                    alt="...">
+                                <div class="card-body">
+                                    <h4 class="card-title">Fantasy Running Back Analysis in Power BI</h4>
+                                    <a href="/html/projects/power_bi.html" class="stretched-link"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 2 -->
                     <div class="col-12 col-lg-6 my-2">
                         <div class="border-0">
                             <div class="card bg-light" style="width: 100%;">
@@ -125,19 +136,6 @@
                                         Backs
                                     </h4>
                                     <a href="/html/projects/legend_rb.html" class="stretched-link"></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Card 2 -->
-                    <div class="col-12 col-lg-6 my-2">
-                        <div class="border-0">
-                            <div class="card bg-light h-100" style="width: 100%;">
-                                <img src="../assets/project_images/stats_matter/title.PNG" class="card-img-top"
-                                    alt="...">
-                                <div class="card-body">
-                                    <h4 class="card-title">What Stats Actually Matter in PPR Fantasy Football?</h4>
-                                    <a href="/html/projects/stats_that_matter.html" class="stretched-link"></a>
                                 </div>
                             </div>
                         </div>
@@ -158,9 +156,9 @@
         <div class=" container-lg">
             <div class="row align-items-center justify-content-center my-3 g-5 ">
                 <div class="text-end">
-                    <h1 class=" m-3 md-m-5 fw-bold">
+                    <h2 class=" m-3 md-m-5 fw-bold">
                         MY INTERESTS
-                    </h1>
+                    </h2>
                 </div>
                 <!-- Data Analysis -->
                 <div class="col-6 col-lg-4 text-center mt-3">
@@ -219,10 +217,10 @@
     <!-- footer -->
     <footer class="bg-primary text-center text-dark">
         <!-- Grid container -->
-        <div class="container p-2">
+        <div class="container">
             <!-- Section: Social media -->
             <div class="row align-items-center justify-content-center">
-                <h3 class="fw-bold mt-2">
+                <h5 class="fw-bold">
                     FOLLOW ME:
                     <!-- Linkedin -->
                     <a class="btn btn-outline-light btn-floating m-1 btn-lg"
@@ -235,7 +233,7 @@
                     <a class=" btn btn-outline-light btn-floating m-1 btn-lg"
                             href="https://open.spotify.com/user/zuknzgwp31g5a54os4snd8g1w?si=59ae283b6a01496f"
                             target="_blank" role="button"><i class="bi bi-spotify"></i></a>
-                </h3>
+                </h5>
 
             </div>
         </div>

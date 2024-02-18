@@ -11978,6 +11978,9 @@ textarea.form-control-lg {
   --bs-body-font-family: "Inter", sans-serif;
   /* For Mobile */
 }
+:root html {
+  zoom: 160%;
+}
 :root body::-webkit-scrollbar {
   display: none;
 }
