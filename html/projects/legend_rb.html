@@ -62,15 +62,11 @@
                 <div class="col-12 text-center text-lg-end mx-2">
                     <h1 class="fw-bold  text-center mb-3 text-uppercase">
                         Analysis of Legendary Fantasy PPR Running Back Seasons and Identifying Potential
-                        Breakouts in 2023</h1>
-                    <h3 class="text-center">Python, SQL, Streamlit</h3>
+                        Breakouts in 2023 (Updated for 2024)</h1>
+                    <h3 class="text-center">Python, SQL</h3>
                     <div class="row justify-content-center align-items-center mt-3 mt-lg-3">
                         <div class="col-lg-4 col-12">
-                            <a href="" class="w-100 my-3 btn btn-light btn-lg border border-dark">Streamlit (Coming
-                                Soon)<i class="bi bi-arrow-right"></i></a>
-                        </div>
-                        <div class="col-lg-4 col-12">
-                            <a href="https://github.com/mpickles/nfl_analysis/blob/main/notebooks/9_legendary_rb_breakouts.ipynb"
+                            <a href="https://github.com/mpickles/nfl_analysis/blob/main/notebooks/10_legendary_rb_breakouts_2024.ipynb"
                                 target="_blank" class="w-100 btn btn-light btn-lg border border-dark">GitHub<i
                                     class="bi bi-arrow-right"></i></a>
                         </div>
@@ -86,9 +82,9 @@
             <div class="row align-items-center justify-content-center">
                 <h2 class="text-start fw-bold mb-3">ABOUT THIS PROJECT</h2>
                 <p class="lead2">
-                    In this project, I set out to analyze the seasons of legendary running backs from 2019 to 2022 to
+                    In this project, I set out to analyze the seasons of legendary running backs from 2019 to 2023 to
                     uncover trends in their stats from the year before they achieved legendary status. The goal was to
-                    compile a list of potential legendary running backs for 2023. For the purpose of this project, I
+                    compile a list of potential legendary running backs for 2024. For the purpose of this project, I
                     defined legendary running backs as those who averaged over 20 fantasy PPR points per game.
                     <br><br>
                     I focused on volume and usage statistics, as well as the metrics I previously identified in my
@@ -110,6 +106,8 @@
                             <li>Derrik Henry (2021)</li>
                             <li>Austin Ekler (2022)</li>
                             <li>Christian McCaffrey(2022)</li>
+                            <li>Christian McCaffrey (2023)</li>
+                            <li>Kyren Williams (2023)</li>
                         </ul>
                     </div>
                     <div class="col-lg-8 my-lg-0 my-3">
@@ -121,13 +119,13 @@
 
                 <p class="lead2">
                     Upon analyzing the seasons leading up to their legendary performances, a few key trends emerged.
-                    Firstly, every single running back was under the age of 27. They also averaged 75 rush yards per
-                    game and 35 receiving yards per game, highlighting their dual-threat capabilities. Additionally,
-                    they averaged 287 implied attempts and 631 snaps, indicating a significant volume of play. These
-                    legendary backs also averaged 19 broken tackles, 11.36 green zone attempts, and 12 explosive plays,
+                    Firstly, every single running back was under the age of 27. They also averaged 70.3 rush yards per
+                    game and 34.1 receiving yards per game, highlighting their dual-threat capabilities. Additionally,
+                    they averaged 274 implied attempts and 604 snaps, indicating a significant volume of play. These
+                    legendary backs also averaged 16.6 broken tackles, 10.46 green zone attempts, and 11.1 explosive plays,
                     showcasing their elusiveness, power, high usage in the red zone, and ability to make big plays.
                     <br><br>
-                    To identify potential candidates for 2023 who could average over 20 PPR points per game, I
+                    To identify potential candidates for 2024 who could average over 20 PPR points per game, I
                     calculated the means of these metrics and subtracted 1 standard deviation from each. The running
                     backs who exceeded these adjusted numbers, specifically in Rush/Rec Yards per game, Implied
                     Attempts, and Snaps, were singled out as promising candidates for the upcoming season. These metrics
@@ -147,6 +145,7 @@
                     </div>
                 </div>
 
+                <h2>Insights From 2023</h2>
 
                 <p class="lead2">
                     When we apply this methodology to the prior years, it becomes apparent that at least one of the
@@ -251,7 +250,52 @@
                     <br><br>
                     My code and work can found on Github and Streamlit.
                 </p>
+                <h2>2023 Update</h2>
+                <p class="lead2">
+                    At the end of the 2024 season, Christian McCaffrey ended as the overall RB1, averaging 24.5 Point per Game (PPG).
+                    Travis Etienne ended as the overall RB3, but only averaged 16.6 PPG. It is worth mentioning
+                    that between weeks 1-9 Etienne was averaging 20.5 PPG. Tony Pollard, on the other hand, was disappointing,
+                    finishing as the RB14 and averaging 13.1 PPG. But, this shows that our methodology produced a solid list of candidates,
+                    correctly identifying McCaffrey ans Etienne as top 5 running backs in 2023.
+                </p>
+                <h2>2024 Running Backs</h2>
+                <p class="lead2">
+                    Running the exact some program with the data from 2023, we get a list of 15 potential candidates:
+                </p>
+                    <div class="row align-items-center justify-content-center my-4">
+                        <div class="col-lg-4">
+                            <ul class="lead2">
+                                <li>Breece Hall</li>
+                                <li>Travis Etienne Jr.</li>
+                                <li>Rachaad White</li>
+                                <li>Kyren Williams</li>
+                                <li>Bijan Robinson</li>
+                                <li>Jahmyr Gibbs</li>
+                                <li>James Cook</li>
+                                <li>Saquon Barkley</li>
+                                <li>Tony Pollard</li>
+                                <li>Isiah Pacheco</li>
+                                <li>Jerome Ford</li>
+                                <li>Kenneth Walker III</li>
+                                <li>Jalen Warren</li>
+                                <li>Josh Jacobs</li>
+                                <li>Rhamondre Stevenson</li>
+                            </ul>
+                        </div>
+                        <div class="col-8">
+                            <img src="../../assets/project_images/legendary_rb/breakouts_2024.PNG" alt="..."
+                                class="img-fluid float-lg-start mx-auto rounded-2 border border-3 border-dark d-block">
+                        </div>
+                    </div>
+                    <p>
+                        Something to note is the ADP is inaccurate at this time (02/17/2024).
+                        <br><br>
+                        From this list, the RBs I am very high on are Breece Hall, Bijan Robinson, Jahmyr Gibbs, and Jalen Warren.
+                        This is only based on last years play. As the offseason continues and we get more information on coaching/player 
+                        changes as well as the ADP for 2024, we will have a better idea on how to rank these players.
+                    </p>
             </div>
+        </div>    
     </section>
 
 
