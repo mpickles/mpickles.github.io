@@ -1,0 +1,203 @@
+<html lang="en" style="scroll-padding-top: 75px">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../../css/main.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <title>Maxwell Pickard</title>
+</head>
+
+<body class="bg-light text-dark">
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-md fixed-top navbar-dark bg-dark">
+        <div class="container-xxl">
+            <!-- website icon -->
+            <a href="../../" class="navbar-brand">
+                <span class="fw-bold text-light">
+                    <h2>MP</h2>
+                </span>
+            </a>
+            <!-- toggle button for mobile -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav"
+                aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- navbar links-->
+            <div class="collapse navbar-collapse justify-content-end align-center mx-5" id="main-nav">
+                <ul class="navbar-nav">
+                    <li class="nav-item mx-3">
+                        <a href="../../" class="nav-link">
+                            <h5>HOME</h5>
+                        </a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a href="../about.html" class="nav-link">
+                            <h5>ABOUT ME</h5>
+                        </a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a href="../portfolio.html" class="nav-link">
+                            <h5>PORTFOLIO</h5>
+                        </a>
+                    </li>
+                    <!-- resume download -->
+                    <li class="nav-item ms-2 d-none d-md-inline">
+                        <a href="../assets/maxwell-pickard-resume.pdf" download="max-pickard-resume"
+                            class="btn btn-primary">MY RESUME<i class="bi bi-download"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- hero -->
+    <section id="home" class="bg-light text-dark my-5" style="height: 85%">
+        <div class="container-lg">
+            <div class="row justify-content-center align-items-center h-100 ">
+                <div class="col-lg-8 col-12 mt-3 mt-lg-5">
+                    <img src="../../assets/project_images/wr_power_bi/wr_dash.PNG" alt="..."
+                        class="img-fluid float-lg-start my-2 mx-auto rounded-2 border border-3 border-dark d-block">
+                </div>
+                <div class="col-12 text-center text-lg-end mx-2">
+                    <h1 class="fw-bold mt-3 mt-lg-5 text-center mb-3">Fantasy Wide Receiver Analysis in Power BI</h1>
+                    <h5 class="text-center">Excel, Power Query, Power BI</h5>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Summary -->
+    <section id="summary" class="mx-3 my-5s">
+        <div class="container-lg">
+            <div class="row align-items-center justify-content-center"></div>
+            <h2 class="text-start fw-bold mb-3 my-5">ABOUT THIS PROJECT</h2>
+            <p class="lead2">
+                In this project, I wanted to repeat the dashboard I created for my running back analysis, but instead of cleaning the data
+                using python and uploading it a mySQL database, I wanted to practice using Excel and Power Query. To start, I downloaded .csv 
+                from FantasyPros.com of Wide Recevier Statistics and Wide Receiver Advanced Statistics from 2013 to 2023. These .csv files were 
+                uploaded into Power Query within Excel where performed data cleaning and wrangling, using the advanced M-Code editor to speed
+                up the process. In  the process, I renamed columns, chose features, and merged the advanced statistics with the regular statistics.
+                The cleaned queries were then loaded into the Excel Workbook and data model.
+                <br><br>
+                I do not own a paid license so unfortunately I am unable to share the Power BI files.
+            </p>
+    </section>
+
+    <section id="photos" class="my-5">
+        <!-- Key Factors -->
+        <div class="container">
+            <div class="row align-items-center justify-content-center m-1 lg-m-5 g-3">
+                <div class="row">
+                    </div>
+                    <div class="col-8">
+                        <img src="../../assets/project_images/wr_power_bi/power_query.PNG" alt="..."
+                            class="img-fluid float-lg-start my-2 mx-auto rounded-2 border border-3 border-dark d-block">
+                    </div>
+                    <div class="col-8">
+                        <img src="../../assets/project_images/wr_power_bi/adv_query.PNG" alt="..."
+                            class="img-fluid float-lg-start my-2 mx-auto rounded-2 border border-3 border-dark d-block">
+                    </div>
+                    <div class="col-8">
+                        <img src="../../assets/project_images/wr_power_bi/cleaned_data.PNG" alt="..."
+                            class="img-fluid float-lg-start my-2 mx-auto rounded-2 border border-3 border-dark d-block">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section id="summary" class="mx-3 my-5">
+            <div class="container-lg">
+                <div class="row align-items-center justify-content-center"></div>
+                <p class="lead2">
+                    After cleaning the data, the excel workbook was loaded into Power BI. Before working with the data, the different
+                    queries were concatenated into one table of Wide Receiver stats from 2013-2023. In Power Bi, two visualizations were created:
+                    a dashboard to explore the data by year and rank, and a key influences analysis on fantasy points. 
+                </p>
+            </div>
+        </section>
+    
+        <section id="photos" class="my-5">
+            <!-- Key Factors -->
+            <div class="container">
+                <div class="row align-items-center justify-content-center m-1 lg-m-5 g-3">
+                    <div class="row">
+                        </div>
+                        <div class="col-8">
+                            <img src="../../assets/project_images/wr_power_bi/wr_dash.PNG" alt="..."
+                                class="img-fluid float-lg-start my-2 mx-auto rounded-2 border border-3 border-dark d-block">
+                        </div>
+                        <section id="summary" class="mx-3 my-5">
+                            <div class="container-lg">
+                                <div class="row align-items-center justify-content-center"></div>
+                                <p class="lead2">
+                                    In the dashboard, there is a table that displays the WRs who meet the criteria of the rank and year splicers. 
+                                    This table displays the players names, fantasy points, receptions, targets, red zone targets, catchable targets,
+                                    drops and explosive plays of 20+ yards. There is a line chart showing the relationship between the number of
+                                    explosive plays and fantasy points. A scatterplot shows players average yards before the catch per reception and average 
+                                    yards after the catch per reception, stats that give an indication of not only a receivers efficeincy but the kind of receiver they are
+                                    (deep threat, possession, playmakers, short yardage target hogs, etc. ) All around the rest of the dashboard there are cards that display the average
+                                    of specific stats of the group of players that fit within the range of the criteria.
+                                </p>
+                            </div>
+                        </section>
+                        <div class="col-8">
+                            <img src="../../assets/project_images/wr_power_bi/key_influ_wr.PNG" alt="..."
+                                class="img-fluid float-lg-start my-2 mx-auto rounded-2 border border-3 border-dark d-block">
+                        </div>
+                        <section id="summary" class="mx-3 my-5">
+                            <div class="container-lg">
+                                <div class="row align-items-center justify-content-center"></div>
+                                <p class="lead2">
+                                    The key influences visualization anlysiss the correlation between the statistics in the data and fantasy points per game.
+                                    In the analysis, I specifically left out touchdowns, yardage, and receptions, as those statistics are built into fantasy scoring.
+                                    The two most stats most correlated with fantasy points were catchable targets and explosive plays, which indicates to me that 
+                                    receivers who are deep threats with above average to elite level quarterbacks who can throw ball deep tend to have the most success.
+                                    Looking at the top receivers in 2023, this would make sense as 8 of the top 12 recevier were above average in either yards before the catch per reception (deep threat)
+                                    or yards after the catch per reception (playmakers). The three receviers who were above average in both categories were 
+                                    Tyreek Hill (WR2) who missed several games due to injury, DJ Moore (WR6), and Nico Collins (WR12), who also missed several games due to injury.
+                                    Tyreek Hill had Tua Tagovailoa at QB and Nico Collins had CJ Stroud, both of which were selected to the Pro Bowl. 
+                                    <br><br>
+                                    It would unwise to rank Wide Receviers in next years fantasy draft only based on these visualizations, but they
+                                    are a very helpful tool I look forward to using when the fantasy season starts up again and I can compare these stats
+                                    with players average draft position to find value picks.
+                                </p>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+
+
+    <!-- footer -->
+    <footer class="bg-primary text-center text-dark">
+        <!-- Grid container -->
+        <div class="container p-2">
+            <!-- Section: Social media -->
+            <div class="row align-items-center justify-content-center">
+                <h2 class="fw-bold mt-2">
+                    FOLLOW ME:
+                    <!-- Linkedin -->
+                    <a class="btn btn-outline-light btn-floating m-1 btn-lg"
+                        href="https://www.linkedin.com/in/maxwellapickard/" target="_blank" role="button">
+                        <i class=" bi bi-linkedin"></i></a>
+                    <!-- Github -->
+                    <a class=" btn btn-outline-light btn-floating m-1 btn-lg" href="https://github.com/mpickles"
+                        target="_blank" role="button"><i class="bi bi-github""></i></a>
+                    <!-- Spotify -->
+                    <a class=" btn btn-outline-light btn-floating m-1 btn-lg"
+                            href="https://open.spotify.com/user/zuknzgwp31g5a54os4snd8g1w?si=59ae283b6a01496f"
+                            target="_blank" role="button"><i class="bi bi-spotify"></i></a>
+                </h2>
+
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
