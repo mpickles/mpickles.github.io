@@ -1,0 +1,309 @@
+<html lang="en" style="scroll-padding-top: 75px">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../../css/main.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <title>Maxwell Pickard</title>
+</head>
+
+<body class="bg-light text-dark">
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-md fixed-top navbar-dark bg-dark">
+        <div class="container-xxl">
+            <!-- website icon -->
+            <a href="../../" class="navbar-brand">
+                <span class="fw-bold text-light">
+                    <h2>MP</h2>
+                </span>
+            </a>
+            <!-- toggle button for mobile -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav"
+                aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- navbar links-->
+            <div class="collapse navbar-collapse justify-content-end align-center mx-5" id="main-nav">
+                <ul class="navbar-nav">
+                    <li class="nav-item mx-3">
+                        <a href="../../" class="nav-link">
+                            <h5>HOME</h5>
+                        </a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a href="../about.html" class="nav-link">
+                            <h5>ABOUT ME</h5>
+                        </a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a href="../portfolio.html" class="nav-link">
+                            <h5>PORTFOLIO</h5>
+                        </a>
+                    </li>
+                    <!-- resume download -->
+                    <li class="nav-item ms-2 d-none d-md-inline">
+                        <a href="../assets/maxwell-pickard-resume.pdf" download="max-pickard-resume"
+                            class="btn btn-primary">MY RESUME<i class="bi bi-download"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- hero -->
+    <section id="home" class="bg-light text-dark my-5" style="height: 85%">
+        <div class="container-lg">
+            <div class="row justify-content-center align-items-center h-100 ">
+                <div class="col-lg-8 col-12 mt-3 mt-lg-5">
+                    <img src="../../assets/project_images/spotify_eda/kendrick/kendrick-lamar-best-rap-album-grammys.png" alt="..."
+                        class="img-fluid float-lg-start my-2 mx-auto rounded-2 border border-3 border-dark d-block">
+                </div>
+                <div class="col-12 text-center text-lg-end mx-2">
+                    <h1 class="fw-bold mt-3 mt-lg-5 text-center mb-3">Exploring Kendrick Lamar Track Data using the Spotify API</h1>
+                    <h5 class="text-center">Python, Jupyter Notebook | <a style=" color:#000000;" href="https://github.com/mpickles/spotify_api_artists_trackshttps://github.com/mpickles"
+                        target="_blank" role="button">Project Github <i class="bi bi-github"></i></a></h5>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Summary -->
+    <section id="summary" class="mx-3 my-5s">
+        <div class="container-lg">
+            <div class="row align-items-center justify-content-center"></div>
+            <h2 class="text-start fw-bold mb-3 my-5">ABOUT THIS PROJECT</h2>
+            <p class="lead2">
+                By connecting to the Spotify API via the 'spotipy' package for Python, I created several functions to 
+                allow myself to enter an artist's name and return a data frame containing the audio features, popularity, and release
+                data from that artist's album and single releases. These helper functions work together to clean the data and 
+                load it into a data frame that can be further explored. 
+                <br><br>
+                Running the Jupyter Notebook, the data from the data frame os printed out, showing the amount of rows, columns, number of null objects,
+                data types of the columns and descriptive statistics. The descriptive statistics are visualized in several box plots and histograms using the plotly 
+                interactive visuzalizations package. Then the note creates a correlation matrix with a heatmap of the audio features, compares average popularity of the artist's tracks and number of releases by years, 
+                explores the artist's average track times by album, and looks at the artist's most and least popular songs.
+                <br><br>
+                For an example, we will analyze data from one of my favorite artists, <b>Kendrick Lamar</b>.
+                <br><br> 
+                If you want to try this with 
+                another artist, click the link to my github and you can get the Jupyter Notebook from there.
+
+            </p>
+    </section>
+
+    <section id="summary" class="mx-3 my-5">
+        <div class="container-lg">
+            <div class="row align-items-center justify-content-center"></div>
+            <h2>Kendrick Lamar Analysis</h2>
+            <p class="lead2">
+                Pulling the data from the spotify API, we get a data frame with 129 rows and 
+                19 columns, meaning we have 129 tracks to explore. We see by checking the dataframe info none fo the entries are null, which is a good sign for us because 
+                it indicates there is no missing data. We can then look at some of the descriptive stats, looking at the mean, standard deviation, percentiles, etc., 
+                but it would be easier to visualize them.
+            </p>
+        </div>
+    </section>
+    <section id="photos" class="my-5">
+        <div class="container">
+            <div class="row align-items-center justify-content-center m-1 lg-m-5 g-3">
+                <div class="row">
+                    </div>
+                    <div class="col-6">
+                        <img src="../../assets/project_images/spotify_eda/kendrick/kendrick_descriptive.PNG" alt="..."
+                            class="img-fluid float-lg-start my-2 mx-auto rounded-2 border border-3 border-dark d-block">
+                    </div>
+                    <div class="col-6">
+                        <img src="../../assets/project_images/spotify_eda/kendrick/kendrick_descriptive_2.PNG" alt="..."
+                        class="img-fluid float-lg-start my-2 mx-auto rounded-2 border border-3 border-dark d-block">
+                    </div>
+                    <div class="col-6">
+                        <img src="../../assets/project_images/spotify_eda/kendrick/kendrick_boxplot.png" alt="..."
+                        class="img-fluid float-lg-start my-2 mx-auto rounded-2 border border-3 border-dark d-block">
+                    </div>
+                    <div class="col-6">
+                        <img src="../../assets/project_images/spotify_eda/kendrick/kendrick_histogram.png" alt="..."
+                        class="img-fluid float-lg-start my-2 mx-auto rounded-2 border border-3 border-dark d-block">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="summary" class="mx-3 my-5">
+        <div class="container-lg">
+            <div class="row align-items-center justify-content-center"></div>
+            <h3>Descriptive statistics</h3>
+            <p class="lead2">
+                By plotting the descriptive statistics of the columns as boxplots and distributions, we can notice a few things.
+                Kendrick's songs tend to have higher energy and loudness, less acoustic, and have somewhat neutral danceability and valence.
+                Something to note about the danceability and valence is that the seems to be a uniform distribution across all of his tracks, 
+                which can indicate that his music covers quite a range of emotions (valence).
+                <br><br>
+                <h3>Correlations of Audio Features</h3>
+                Looking at the heatmap of the correlations between variables, we see there is a very strong positive correlation between energy and loudness,
+                and weakly negative correaltions between loudness and instrumentalness, energy and instrumnetalness, and speechiness and danceability.
+                The variable with the strongest positive correlation to popularity is danceability, although this relationship appears to be weak. 
+            </p>
+        </div>
+    </section>
+    <section id="photos" class="my-5">
+        <!-- Key Factors -->
+        <div class="container">
+            <div class="row align-items-center justify-content-center m-1 lg-m-5 g-3">
+                <div class="row">
+                    </div>
+                        <div class="col-12">
+                            <img src="../../assets/project_images/spotify_eda/kendrick/kendrick_heatmap.png" alt="..."
+                                class="img-fluid float-lg-start my-2 mx-auto rounded-2 border border-3 border-dark d-block">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <section id="summary" class="mx-3 my-5">
+        <div class="container-lg">
+            <div class="row align-items-center justify-content-center"></div>
+            <h3>Popularity by Year and Album Releases</h3>
+            <p class="lead2">
+                Looking at Kendrick's Popularity over the years, we see it has gradually increased. In 2010, he dropped his debut mixtape
+                "Overly Dedicated", which is his least popular project. Bu, the following year we see a very large spike in his average track 
+                popularity with the release of "Section.80", Lamar's first studio album. Many msuic critics agree that this album was when he 
+                began tho hone his unique style of music. The following year, Lamar released "good kid, m.A.A.d city", an album that received critical
+                acclaim due to its themes and storytelling elements, and such we see another increase in his tracks average popularity. 
+                <br><br>
+                In 2015, Lamar released "To Pimp a Butterfly", an album that focused on addressing social and racial issues in America by highlighting his own experiences
+                and the experiences of those around him. Many critics would debate that "To Pimp a Butterfly" is one of if not the greatest hip-hop albums of
+                all time. This is reflected in a large spike in average popularity. There is a dip in popularity in 2016, when Kendrick released
+                "Unititled Unmastered", an album of ".To Pimp a Butterfly" throwaway songs. 2017 there is a huge spike in the number of tracks released.
+                This is when Kendrick released his album "DAMN." as well as the collectors edition of damn. What is curious is the average popularity of is lower than what 
+                could be expected with a large release. This small gain in average popularity will be explained later on. 
+                <br><br>
+                In 2018 we see another small jump in average popularity with the release 2018's "Black Panther" album that 
+                Kendrick supervised and worked on with Marvel. It would not be until 2022 that Lamar would drop his next projext, 
+                "Mr. Morale and the Big Steppers", an album that focuses on his own shortcomings as a man and the traumas that affect him
+                and many other men in the world. This album was his first major release since 2017's "DAMN.", and once again we see a large spike in
+                average track popularity.
+            </p>
+        </div>
+    </section>
+    <section id="photos" class="my-5">
+        <!-- Key Factors -->
+        <div class="container">
+            <div class="row align-items-center justify-content-center m-1 lg-m-5 g-3">
+                <div class="row">
+                    </div>
+                        <div class="col-12">
+                            <img src="../../assets/project_images/spotify_eda/kendrick/kendrick_lineplot.png" alt="..."
+                                class="img-fluid float-lg-start my-2 mx-auto rounded-2 border border-3 border-dark d-block">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <section id="summary" class="mx-3 my-5">
+        <div class="container-lg">
+            <div class="row align-items-center justify-content-center"></div>
+            <h3>Most Popular Albums</h3>
+            <p class="lead2">
+               Kendricks top 3 most popular albums are "DAMN.", "Mr. Morale and the Big Steppers", and "To Pimp a Butterfly".
+               His three least popular albums are "Unititled Unmastered", "Overly Dedicated", and "DAMN. COLLECTORS EDITIONS".
+               His three most popular albums are also his most critically acclaimed albums, with "good kid, m.A.A.d city" right there in 
+               the mix as his fourth most popular album. "Overly Dedicated" was his first ever release before he established his identiy, so it makes sense 
+               this would be one of his least popular. Same with "Unititled Unmastered", the album of songs that didn't make the cut for "To Pimp a Butterfly".
+               The interesting thing here is "DAMN. COLLECTORS EDTION" (DAMN. CE). 
+               <br><br>
+               "DAMN. CE" was released the same year as "DAMN.", but the difference is the order of the tracklist, where the songs on "DAMN." are listed in reverse 
+               order on "DAMN. CE". The songs are exactly the same, but are listed as different by Spotify. Since most people listen to the DAMN and not
+               "DAMN. CE", we get a mix of his most popular songs and least popular songs being in the same year, which is why we didn't see a 
+               spike in average track popularity in 2017. 
+            </p>
+        </div>
+    </section>
+    <section id="photos" class="my-5">
+        <!-- Key Factors -->
+        <div class="container">
+            <div class="row align-items-center justify-content-center m-1 lg-m-5 g-3">
+                <div class="row">
+                    </div>
+                        <div class="col-12">
+                            <img src="../../assets/project_images/spotify_eda/kendrick/kendrick_popular_album.png" alt="..."
+                                class="img-fluid float-lg-start my-2 mx-auto rounded-2 border border-3 border-dark d-block">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <section id="summary" class="mx-3 my-5">
+        <div class="container-lg">
+            <div class="row align-items-center justify-content-center"></div>
+            <h3>Most Popular and Least Popular Songs</h3>
+            <p class="lead2">
+                Kendrick's most popular song is "All the Stars ft. SZA", the end credits track for the Black Panther Album. We can notice That
+                10 of his top 15 most popular songs came from "DAMN." (HUMBLE, LOVE, PRIDE, DNA, LOYALTY), and "Mr Morale" 
+                (N95, United in Grief, Die Hard, Rich Spirit, Count Me Out). Only 2 songs from "To Pimp a Butterfly" 
+                appear in his top 15 (Alright, King Kunta), and 1 song from "good kid, m.A.A.d city" (Poetic Justice) and 1 song from 
+                "Section.80" (A.D.H.D)
+                <br><br>
+                Looking at Kendrick's 15 least popular songs, we see 11 of those songs are on "DAMN. CE", which again explains why his
+                average track popularity growth was lower than expected in 2017. The only songs that weren't on "DAMN. CE" were
+                "Michael Jordan", "R.O.T.C (Interlude)", and "H.O.C" from "Overly Dedicated"  and "Ab-Souls Outro" from "Section.80"
+            </p>
+        </div>
+    </section>
+    <section id="photos" class="my-5">
+        <!-- Key Factors -->
+        <div class="container">
+            <div class="row align-items-center justify-content-center m-1 lg-m-5 g-3">
+                <div class="row">
+                    </div>
+                        <div class="col-12">
+                            <img src="../../assets/project_images/spotify_eda/kendrick/kendrick_top_songs.png" alt="..."
+                                class="img-fluid float-lg-start my-2 mx-auto rounded-2 border border-3 border-dark d-block">
+                        </div>
+                        <div class="col-12">
+                            <img src="../../assets/project_images/spotify_eda/kendrick/kendrick_least_pop_songs.png" alt="..."
+                                class="img-fluid float-lg-start my-2 mx-auto rounded-2 border border-3 border-dark d-block">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+
+
+    <!-- footer -->
+    <footer class="bg-primary text-center text-dark">
+        <!-- Grid container -->
+        <div class="container p-2">
+            <!-- Section: Social media -->
+            <div class="row align-items-center justify-content-center">
+                <h2 class="fw-bold mt-2">
+                    FOLLOW ME:
+                    <!-- Linkedin -->
+                    <a class="btn btn-outline-light btn-floating m-1 btn-lg"
+                        href="https://www.linkedin.com/in/maxwellapickard/" target="_blank" role="button">
+                        <i class=" bi bi-linkedin"></i></a>
+                    <!-- Github -->
+                    <a  btn-outlineclass=" btn-light btn-floating m-1 btn-lg" href="https://github.com/mpickles"
+                        target="_blank" role="button"><i class="bi bi-github"></i></a>
+                    <!-- Spotify -->
+                    <a class=" btn btn-outline-light btn-floating m-1 btn-lg"
+                            href="https://open.spotify.com/user/zuknzgwp31g5a54os4snd8g1w?si=59ae283b6a01496f"
+                            target="_blank" role="button"><i class="bi bi-spotify"></i></a>
+                </h2>
+
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
