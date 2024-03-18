@@ -59,9 +59,9 @@
                         class="img-fluid float-lg-start my-2 mx-auto rounded-2 border border-3 border-dark d-block">
                 </div>
                 <div class="col-12 text-center text-lg-end mx-2">
-                    <h1 class="fw-bold mt-3 mt-lg-5 text-center mb-3">Exploring Kendrick Lamar Track Data using the Spotify API</h1>
+                    <h1 class="fw-bold mt-3 mt-lg-5 text-center mb-3">Digital Marketing Metrics and KPI Data Analysis </h1>
                     <h5 class="text-center">Python, Jupyter Notebook | <a style=" color:#000000;" href="https://github.com/mpickles/spotify_api_artists_trackshttps://github.com/mpickles"
-                        target="_blank" role="button">Link to Project Github <i class="bi bi-github"></i></a></h5>
+                        target="_blank" role="button">Link to Project Github<i class="bi bi-github"></i></a></h5>
                 </div>
             </div>
         </div>
@@ -72,21 +72,7 @@
             <div class="row align-items-center justify-content-center"></div>
             <h2 class="text-start fw-bold mb-3 my-5">ABOUT THIS PROJECT</h2>
             <p class="lead2">
-                By connecting to the Spotify API via the 'spotipy' package for Python, I created several functions to 
-                allow myself to enter an artist's name and return a data frame containing the audio features, popularity, and release
-                data from that artist's album and single releases. These helper functions work together to clean the data and 
-                load it into a data frame that can be further explored. 
-                <br><br>
-                Running the Jupyter Notebook, the data from the data frame os printed out, showing the amount of rows, columns, number of null objects,
-                data types of the columns and descriptive statistics. The descriptive statistics are visualized in several box plots and histograms using the plotly 
-                interactive visualizations package. Then the note creates a correlation matrix with a heatmap of the audio features, compares average popularity of the artist's tracks and number of releases by years, 
-                explores the artist's average track times by album, and looks at the artist's most and least popular songs.
-                <br><br>
-                For an example, we will analyze data from one of my favorite artists, <b>Kendrick Lamar</b>.
-                <br><br> 
-                If you want to try this with 
-                another artist, click the link to my github and you can get the Jupyter Notebook from there.
-
+                
             </p>
     </section>
 
@@ -95,10 +81,7 @@
             <div class="row align-items-center justify-content-center"></div>
             <h2>Kendrick Lamar Analysis</h2>
             <p class="lead2">
-                Pulling the data from the spotify API, we get a data frame with 129 rows and 
-                19 columns, meaning we have 129 tracks to explore. We see by checking the dataframe info none fo the entries are null, which is a good sign for us because 
-                it indicates there is no missing data. We can then look at some of the descriptive stats, looking at the mean, standard deviation, percentiles, etc., 
-                but it would be easier to visualize them.
+                
             </p>
         </div>
     </section>
@@ -132,15 +115,7 @@
             <div class="row align-items-center justify-content-center"></div>
             <h3>Descriptive statistics</h3>
             <p class="lead2">
-                By plotting the descriptive statistics of the columns as box plots and distributions, we can notice a few things.
-                Kendrick's songs tend to have higher energy and loudness, less acoustic, and have somewhat neutral danceability and valence.
-                Something to note about the danceability and valence is that the seems to be a uniform distribution across all of his tracks, 
-                which can indicate that his music covers quite a range of emotions (valence).
-                <br><br>
-                <h3>Correlations of Audio Features</h3>
-                Looking at the heatmap of the correlations between variables, we see there is a very strong positive correlation between energy and loudness,
-                and weakly negative correlations between loudness and instrumentalness, energy and instrumentalness, and speechiness and danceability.
-                The variable with the strongest positive correlation to popularity is danceability, although this relationship appears to be weak. 
+
             </p>
         </div>
     </section>
@@ -288,7 +263,7 @@
                         href="https://www.linkedin.com/in/maxwellapickard/" target="_blank" role="button">
                         <i class=" bi bi-linkedin"></i></a>
                     <!-- Github -->
-                    <a  btn-outlineclass=" btn-light btn-floating m-1 btn-lg" href="https://github.com/mpickles"
+                    <a  btn-outline class=" btn-light btn-floating m-1 btn-lg" href="https://github.com/mpickles"
                         target="_blank" role="button"><i class="bi bi-github"></i></a>
                     <!-- Spotify -->
                     <a class=" btn btn-outline-light btn-floating m-1 btn-lg"
