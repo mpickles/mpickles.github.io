@@ -72,26 +72,752 @@
             <div class="row align-items-center justify-content-center"></div>
             <h2 class="text-start fw-bold mb-3 my-5">ABOUT THIS PROJECT</h2>
             <p class="lead2">
-                something
+                In this project, I took marketing data from kaggle.com, cleaned it, and created a Power BI dashboard to explore and visualize insights into the data.
+                The <a style="color:#000000;" href="https://www.kaggle.com/datasets/sinderpreet/analyze-the-marketing-spending/data"
+                target = "_blank">dataset</a>
+                contained marketing spending, revenue, profit, and metric data generated from different digital marking campaigns run by an Indian-based company.
+                The dataset was put into a Jupyter Notebook where I used the pandas library to transform and clean the raw data. The data 
+                was then exported as .csv file and uploaded to Power BI, where I made the dashboard.
+            </p>
+            <h2 class="text-start fw-bold mb-3 my-5">TLDR</h2>
+            <p class="lead2">
+                <ul>
+                    <li>The best campaigns are the <b>youtube_blogger</b> and <b>facebook_retargeting</b> campaigns</li>
+                    <li>The campaigns that should be ended and their budget reallocated are:
+                        <ul>
+                            <li><b>facebook_lal</b></li>
+                            <li><b>facebook_tier1</b></li>
+                            <li><b>facebook_tier2</b></li>
+                            <li><b>instagram_tier2</b></li>
+                        </ul>
+                    </li>
+                    <li>
+                        The campaigns that can be kept and improved upon are:
+                        <ul>
+                            <li><b>banner_partner</b></li>
+                            <li><b>instagram_blogger</b></li>
+                            <li><b>instagram_tier1</b></li>
+
+                        </ul>
+                    </li>
+                </ul>
             </p>
     </section>
     <section id="photos" class="my-5">
         <div class="container">
             <div class="row align-items-center justify-content-center m-1 lg-m-5 g-3">
                 <div class="row">
-                    </div>
-                    <div class="col-6">
-                        <img src="../../assets/project_images/spotify_eda/kendrick/kendrick-lamar-best-rap-album-grammys.png" alt="..."
-
+                    <h2 class="text-start fw-bold mb-3 my-5">Totals Dashboard</h2> 
+                </div>
+                    <div class="col-10">
+                        <img src="../../assets/project_images/digital_market/totals.PNG" alt="..."
                             class="img-fluid float-lg-start my-2 mx-auto rounded-2 border border-3 border-dark d-block">
                     </div>
                 </div>
             </div>
         </div>
     </section>
-   
-
-
+    <section id="summary" class="mx-3 my-5s">
+        <div class="container-lg">
+            <div class="row align-items-center justify-content-center"></div>
+            <p class="lead2">
+                Overall, the marketing campaigns where a success. The campaigns could be broken up into 4 different categories:
+                 Influencer, Media, Search, and Social. Influencer marketing campaigns were campaigns where the company paid influencer to promote 
+                 products to their audience; Media refers to traditional advertising, in this case banner advertisements on websites; 
+                 Search referred to promoting products on search engines, i.e. Google; Social referred to promoting advertisements on social media
+                 platforms such as Facebook and Instagram. 
+                 <br><br>
+                <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">Category</th>
+                        <th scope="col">Revenue</th>
+                        <th scope="col">Marketing Cost</th>
+                        <th scope="col">Profit</th>
+                        <th scope="col">Impressions</th>
+                        <th scope="col">Clicks</th>
+                        <th scope="col">Leads</th>
+                        <th scope="col">Orders</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">All</th>
+                        <td>$580.10K</td>
+                        <td>$413.76K</td>
+                        <td>$166.34K</td>
+                        <td>2 Billion</td>
+                        <td>3 Million</td>
+                        <td>66K</td>
+                        <td>8043</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Influencer</th>
+                        <td>$285.66K</td>
+                        <td>$112.33K</td>
+                        <td>$173.32K</td>
+                        <td>78 Million</td>
+                        <td>750K</td>
+                        <td>17K</td>
+                        <td>3014</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Media</th>
+                        <td>$83.22K</td>
+                        <td>$67.99K</td>
+                        <td>$15.23K</td>
+                        <td>1 Billon</td>
+                        <td>420K</td>
+                        <td>10K</td>
+                        <td>1566</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Search</th>
+                        <td>$50.11K</td>
+                        <td>$46.80K</td>
+                        <td>$3.31K</td>
+                        <td>72 Million</td>
+                        <td>330K</td>
+                        <td>7107</td>
+                        <td>828</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Social</th>
+                        <td>$161.11K</td>
+                        <td>$186.63K</td>
+                        <td>$-25.52K</td>
+                        <td>359 Million</td>
+                        <td>1 Million</td>
+                        <td>31K</td>
+                        <td>2635</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <br><br>
+                  All of the marketing channels together generated $580.10K in revenue and $166.34K in profit. Overall the campaigns
+                  generated over 2 billion impressions, 3 million clicks, 66K leads, and 8043 orders. But, not all campaigns are created equally.
+                  <ul>
+                    <li>Influencer campaigns generated the most profit at $173.32K. 
+                    Despite generating the second least amount of impressions (78 M), 
+                    the influencer campaigns generated 17K leads and 3014 orders, 
+                    the second least amount of leads and most orders.
+                    </li> 
+                    <li>
+                        The media campaigns generated over 1 billion impressions but lead to only 10K leads and 1566 orders.
+                    </li>
+                    <li>
+                        The search campaigns lead to the least amount of leads and orders, 7107 leads and 828 orders.
+                    </li>
+                    <li>
+                        The Social Media Campaigns had second most impressions and most clicks and leads, leading to the second most orders. but despite this, 
+                        the campaigns generated negative profit (-$25.52K) 
+                    </li>
+                  </ul>
+            </p>
+    </section>
+    <!-- ROMI -->
+    <section id="photos" class="my-5">
+        <div class="container">
+            <div class="row align-items-center justify-content-center m-1 lg-m-5 g-3">
+                <div class="row">
+                    <h2 class="text-start fw-bold mb-3 my-5">Return on Marketing Investment</h2>
+                </div>
+                    <div class="col-10">
+                        <img src="../../assets/project_images/digital_market/romi.PNG" alt="..."
+                            class="img-fluid float-lg-start my-2 mx-auto rounded-2 border border-3 border-dark d-block">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="summary" class="mx-3 my-5s">
+        <div class="container-lg">
+            <div class="row align-items-center justify-content-center"></div>
+            <p class="lead2">
+                The Return on Marketing Investment (ROMI) is a metric that measures measures the effectiveness of every dollar spent on marketing.
+                The higher the ROMI, the more effective our marketing spending.
+                <br><br>
+                <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">Category</th>
+                        <th scope="col">Average ROMI</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">All</th>
+                        <td>40.76%</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Influencer</th>
+                        <td>170.00%</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Media</th>
+                        <td>24.23%</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Search</th>
+                        <td>19.14%</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Social</th>
+                        <td>7.64%</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <br><br>
+                  All marketing channels together had an average ROMI of 40.76%. This indicates that not every campaign was profitable. 
+                  For every $1.00 spent on marketing, we profited only $0.4076, which is wasteful. Looking at average ROMI by the marketing categories,
+                  we see that:
+                  <ul>
+                    <li>Media, Search, and Social Marketing all had ROMIs of under 100%, meaning they were not very effective.</li>
+                    <li>Influencer Marketing was very effective, generating an ROMI of 170%</li>
+                  </ul>
+                  Breaking it down further, we can observe the individual campaigns.
+                  <br><br>
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">Campaign Name</th>
+                        <th scope="col">Category</th>
+                        <th scope="col">ROMI</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">youtube_blogger</th>
+                        <td>Influencer</td>
+                        <td>306.87%</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">facebook_retargeting</th>
+                        <td>Social</td>
+                        <td>145.01%</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">google_hot</th>
+                        <td>Search</td>
+                        <td>70.87%</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">instagram_tier1</th>
+                        <td>Social</td>
+                        <td>64.60%</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">instagram_blogger</th>
+                        <td>Influencer</td>
+                        <td>33.14%</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">banner_partner</th>
+                        <td>Media</td>
+                        <td>24.23%</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">facebook_tier1</th>
+                        <td>Social</td>
+                        <td>-6.64%</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">facebook_tier2</th>
+                        <td>Social</td>
+                        <td>-29.08%</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">google_wide</th>
+                        <td>Search</td>
+                        <td>-32.58%</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">instagram_tier2</th>
+                        <td>Social</td>
+                        <td>-39.95%</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">facebook_lal</th>
+                        <td>Social</td>
+                        <td>-88.09%</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <br><br>
+                  Some things to point out here:
+                  <ul>
+                    <li>The two highest ROMI campaigns were <b>youtube_blogger</b> and <b>facebook_retargeting</b>, being the only campaigns with ROMIs of over 100%,</li>
+                    <li><b>youtube_blogger</b> had the highest ROMI by far at 306.87%</li>
+                    <li>While <b>facebook_retargeting</b> had the second highest ROMI, the rest of the social media campaigns had poor ROMIs,
+                        with <b>instagram_tier1</b> being the only other positive ROMI at 64.60% and the rest being negative (i.e. losing profit) 
+                    </li>
+                  </ul>
+            </p>
+    </section>
+    <!-- Click Through Rate -->
+    <section id="photos" class="my-5">
+        <div class="container">
+            <div class="row align-items-center justify-content-center m-1 lg-m-5 g-3">
+                <div class="row">
+                    <h2 class="text-start fw-bold mb-3 my-5">Click Through Rate</h2>
+                </div>
+                    <div class="col-10">
+                        <img src="../../assets/project_images/digital_market/ctr.PNG" alt="..."
+                            class="img-fluid float-lg-start my-2 mx-auto rounded-2 border border-3 border-dark d-block">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="summary" class="mx-3 my-5s">
+        <div class="container-lg">
+            <div class="row align-items-center justify-content-center"></div>
+            <p class="lead2">
+                The Click Through Rate (CTR) is a measure of how many people clicked on an ad. Its the number of clicks divided by
+                the number of impressions.
+                <br><br>
+                <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">Category</th>
+                        <th scope="col"> Average CTR</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">All</th>
+                        <td>0.96%</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Influencer</th>
+                        <td>0.98%</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Media</th>
+                        <td>0.13%</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Search</th>
+                        <td>1.23%</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Social</th>
+                        <td>1.00%</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <br><br>
+                  The average CTR overall was 0.96%. In general you want to aim for a click through rate of 2-5%, depending on
+                  the industry and advertisement type.
+                  <ul>
+                    <li>Social Media campaigns had the highest overall CTR at 1.23</li>
+                    <li>The Media campaign had the worst average CTR at 0.13%</li>
+                  </ul>
+                  <br><br>
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">Campaign Name</th>
+                        <th scope="col">Category</th>
+                        <th scope="col">CTR</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">youtube_blogger</th>
+                        <td>Influencer</td>
+                        <td>0.99%</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">facebook_retargeting</th>
+                        <td>Social</td>
+                        <td>3.04%</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">google_hot</th>
+                        <td>Search</td>
+                        <td>1.94%</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">instagram_tier1</th>
+                        <td>Social</td>
+                        <td>0.50%</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">instagram_blogger</th>
+                        <td>Influencer</td>
+                        <td>0.98%</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">banner_partner</th>
+                        <td>Media</td>
+                        <td>0.13%</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">facebook_tier1</th>
+                        <td>Social</td>
+                        <td>0.50%</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">facebook_tier2</th>
+                        <td>Social</td>
+                        <td>0.51%</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">google_wide</th>
+                        <td>Search</td>
+                        <td>0.52%</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">instagram_tier2</th>
+                        <td>Social</td>
+                        <td>0.51%</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">facebook_lal</th>
+                        <td>Social</td>
+                        <td>0.97%</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <br><br>
+                  <ul>
+                    <li>The only campaigns that had a CTR above 1% were the <b>facebook_retargeting</b> and <b>google_hot</b>.</li>
+                    <li>Every other campaign had a CTR under 1%.</li>
+                    <li>The campaign with the worst CTR was <b>banner_partner</b>, the only media campaign.</li>
+                  </ul>
+            </p>
+    </section>
+<!-- Conversion Rates -->
+<section id="photos" class="my-5">
+    <div class="container">
+        <div class="row align-items-center justify-content-center m-1 lg-m-5 g-3">
+            <div class="row">
+                <h2 class="text-start fw-bold mb-3 my-5">Conversions Rates</h2>
+            </div>
+                <div class="col-10">
+                    <img src="../../assets/project_images/digital_market/conv.PNG" alt="..."
+                        class="img-fluid float-lg-start my-2 mx-auto rounded-2 border border-3 border-dark d-block">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="summary" class="mx-3 my-5s">
+    <div class="container-lg">
+        <div class="row align-items-center justify-content-center"></div>
+        <p class="lead2">
+            The Conversion Rate is the rate at which a <b>lead</b> converts to a a <b>sale (order)</b>
+            <br><br>
+            <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">Category</th>
+                    <th scope="col"> Average Conversion Rate</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">All</th>
+                    <td>13%</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Influencer</th>
+                    <td>18%</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Media</th>
+                    <td>15%</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Search</th>
+                    <td>11%</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Social</th>
+                    <td>12%</td>
+                  </tr>
+                </tbody>
+              </table>
+              <br><br>
+              The average conversion rate for all marketing channels was 13%, which is above the benchmark of 10%. 
+              <ul>
+                <li>Influencer Campaigns had the highest average conversion rate at 18%</li>
+                <li>Search Campaigns had the lowest average conversion rate at 11%, which is still good</li>
+              </ul>
+              <br><br>
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">Campaign Name</th>
+                    <th scope="col">Category</th>
+                    <th scope="col">Conversion Rate</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">youtube_blogger</th>
+                    <td>Influencer</td>
+                    <td>20%</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">facebook_retargeting</th>
+                    <td>Social</td>
+                    <td>20%</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">google_hot</th>
+                    <td>Search</td>
+                    <td>14%</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">instagram_tier1</th>
+                    <td>Social</td>
+                    <td>11%</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">instagram_blogger</th>
+                    <td>Influencer</td>
+                    <td>15%</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">banner_partner</th>
+                    <td>Media</td>
+                    <td>15%</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">facebook_tier1</th>
+                    <td>Social</td>
+                    <td>12%</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">facebook_tier2</th>
+                    <td>Social</td>
+                    <td>8%</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">google_wide</th>
+                    <td>Search</td>
+                    <td>9%</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">instagram_tier2</th>
+                    <td>Social</td>
+                    <td>3%</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">facebook_lal</th>
+                    <td>Social</td>
+                    <td>15%</td>
+                  </tr>
+                </tbody>
+              </table>
+              <br><br>
+              <ul>
+                <li>Most campaigns had very good conversion rates, only <b>instagram_tier2</b> had a low conversion rate of 3%</li>
+                <li>The top two campaigns with the highest conversion rates were <b>youtube_blogger</b> and <b>facebook_retargeting</b></li>
+              </ul>
+        </p>
+</section>
+<!-- Average Costs -->
+<section id="photos" class="my-5">
+    <div class="container">
+        <div class="row align-items-center justify-content-center m-1 lg-m-5 g-3">
+            <div class="row">
+                <h2 class="text-start fw-bold mb-3 my-5">Average Costs</h2>
+            </div>
+                <div class="col-10">
+                    <img src="../../assets/project_images/digital_market/cost.PNG" alt="..."
+                        class="img-fluid float-lg-start my-2 mx-auto rounded-2 border border-3 border-dark d-block">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="summary" class="mx-3 my-5s">
+    <div class="container-lg">
+        <div class="row align-items-center justify-content-center"></div>
+        <p class="lead2">
+            Here we observe the <b>cost per click</b>, <b>cost per lead</b>, and <b>customer acquisition cost (CAC)</b> 
+            (i.e. how much money we spent to obtain 1 click/lead/customer)
+            <br><br>
+            <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">Category</th>
+                    <th scope="col"> Average Cost per Click</th>
+                    <th scope="col"> Average Cost per Lead</th>
+                    <th scope="col"> Average CAC</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">All</th>
+                    <td>$0.15</td>
+                    <td>$7.32</td>
+                    <td>$53.57</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Influencer</th>
+                    <td>$0.16</td>
+                    <td>$6.79</td>
+                    <td>$40.52</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Media</th>
+                    <td>$0.14</td>
+                    <td>$6.17</td>
+                    <td>$40.06</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Search</th>
+                    <td>$0.15</td>
+                    <td>$7.22</td>
+                    <td>$51.46</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Social</th>
+                    <td>$0.15</td>
+                    <td>$7.71</td>
+                    <td>$60.87</td>
+                  </tr>
+                </tbody>
+              </table>
+              <br><br>
+              <ul>
+                <li>Influencer and Media Campaigns had the lowest CAC at around $40. </li>
+                <li>Social Media by far had the highest CAC at around $61</li>
+              </ul>
+              <br><br>
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">Campaign Name</th>
+                    <th scope="col">Category</th>
+                    <th scope="col"> Cost per Click</th>
+                    <th scope="col"> Cost per Lead</th>
+                    <th scope="col"> CAC</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">youtube_blogger</th>
+                    <td>Influencer</td>
+                    <td>$0.13</td>
+                    <td>$5.62</td>
+                    <td>$28.28</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">facebook_retargeting</th>
+                    <td>Social</td>
+                    <td>$0.12</td>
+                    <td>$5.53</td>
+                    <td>$25.61</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">google_hot</th>
+                    <td>Search</td>
+                    <td>$0.18</td>
+                    <td>$9.04</td>
+                    <td>$51.87</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">instagram_tier1</th>
+                    <td>Social</td>
+                    <td>$0.19</td>
+                    <td>$8.74</td>
+                    <td>$72.15</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">instagram_blogger</th>
+                    <td>Influencer</td>
+                    <td>$0.18</td>
+                    <td>$7.96</td>
+                    <td>$52.76</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">banner_partner</th>
+                    <td>Media</td>
+                    <td>$0.14</td>
+                    <td>$6.17</td>
+                    <td>$40.06</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">facebook_tier1</th>
+                    <td>Social</td>
+                    <td>$0.19</td>
+                    <td>$8.74</td>
+                    <td>$72.15</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">facebook_tier2</th>
+                    <td>Social</td>
+                    <td>$0.18</td>
+                    <td>$7.47</td>
+                    <td>$83.31</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">google_wide</th>
+                    <td>Search</td>
+                    <td>$0.11</td>
+                    <td>$5.41</td>
+                    <td>$51.04</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">instagram_tier2</th>
+                    <td>Social</td>
+                    <td>$0.03</td>
+                    <td>$1.26</td>
+                    <td>$37.69</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">facebook_lal</th>
+                    <td>Social</td>
+                    <td>$0.31</td>
+                    <td>$17.92</td>
+                    <td>$105.78</td>
+                  </tr>
+                </tbody>
+              </table>
+              <br><br>
+              <ul>
+                <li><b>instagram_tier2</b> had the lowest cost per click and cost per lead ($0.03 and $1.26)</li>
+                <li>The campaigns with the lowest CAC were <b>youtube_blogger</b> and <b>facebook_retargeting</b> ($28.28 and $25.61)</li>
+                <li>The Most expensive CAC was <b>facebook_lal</b> ($105.78)</li>
+              </ul>
+              <br><br>
+        </p>
+</section>   
+<!-- Conclusions -->
+<section id="summary" class="mx-3 my-5s">
+    <div class="container-lg">
+        <div class="row align-items-center justify-content-center"></div>
+        <h2><b>Conclusions</b></h2>
+        <p class="lead2">
+           From the data, we can conclude that the best marketing campaigns were <b>youtube_blogger</b> and <b>facebook_retargeting</b>. 
+           The campaigns were constantly leading all metrics. We shouldn't ignore the other campaigns. Its clear to see that a majority of the social media
+           campaigns are ineffective and causing the company to lose money. 
+           <br><br>
+           The <b>youtube_blogger</b> and <b>facebook_retargeting</b> should be kept and continued to have money allocated to them. The 
+           have good ROMIs and are very cost efficient, bring in a majority of the orders.
+           <br><br>
+           The <b>google_hot</b> campaign had the 3rd highest ROMI and Conversion Rate and 2nd highest CTR. It is in the middle of pack in terms 
+           of CAC, so its a campaign that should also be kept. 
+           <br><br>
+           The <b>instagram_tier1</b> campaign is the only other social campaign that should be kept. It has a higher ROMI of 64.6%, average CTR of 0.50
+           and conversion rate of 11%, and middle to higher CAC. What sets it apart from the <b>instagram_tier2</b>, <b>facebook_tier1</b>, and
+            <b>facebook_tier2</b> is that its ROMI is positive. The others have very similar CTR, CAC and conversion rates, but they have negative ROMI, thus
+            should be ended.
+          <br><br>
+          The <b>instagram_blogger</b> and <b>banner_partner</b> campaigns are the last two campaigns that I believe should be kept.
+          The have okay ROMIs of 33% and 24%, great conversion rates of 15%, and lower CAC of $52.76 and $40.06, respectively. <b>instagram_blogger</b>
+          has a much higher CTR of 0.98% opposed to <b>banner_partner</b>'s CTR of 0.13%, but the lower CAC and positive conversion rates and ROMI
+          convince me that the campaigns should be kept, although they may need some work the better the ROMI.
+          <br><br>
+          The <b>facebook_lal</b> campaign should be ended. It has the worst ROMI and the highest CAC. While the conversion rates and CTR are good,
+          the fact that it's ROMI is close to -90% and CAC is $105.78, the next highest CAC being <b>facebook_tier2</b> at $83.31, it is a very cost inefficient 
+          that should be ended and its budget reallocated to other campaigns.  
+ </section> 
     <!-- footer -->
     <footer class="bg-primary text-center text-dark">
         <!-- Grid container -->
